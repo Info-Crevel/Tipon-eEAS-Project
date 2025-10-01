@@ -45,7 +45,11 @@
             <div class="personal gap ">
               <div class="container-1">
                   <div class="app-box-style">
+<<<<<<< HEAD
                     <div class="Header app-form-header curved-1">PROFILE profiles</div>
+=======
+                    <div class="Header app-form-header curved-1">PROFILE</div>
+>>>>>>> Updateheader
                     <div class="main">
                       <div class="test">
                         <div class="box-profile gap">
