@@ -1,0 +1,26 @@
+{
+  "lookuptitle": "Province List",
+  "querytitle": "Find Province",
+  "datasource": "QDbsProvince",
+  "key": "provinceId",
+  "sort": "provinceName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "provinceName", "caption" : "Province", "width": 46, "datatype": "S", "align": "" },
+    { "column": "provinceId", "caption" : "ID", "width": 14, "datatype": "S", "align": "" },
+    { "column": "regionName", "caption" : "Region", "width": 40, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "provinceName", "caption": "Province", "width": 3, "datatype": "S" },
+    { "column": "regionName", "caption": "Region", "width": 3, "datatype": "S" }
+  ],
+
+  
+}

@@ -1,0 +1,25 @@
+{
+  "lookuptitle": "Timekeeping Policy List",
+  "querytitle": "Find Timekeeping Policy",
+  "datasource": "PayTimekeeping",
+  "key": "timekeepingId",
+  "sort": "timekeepingId, timekeepingDescription",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "sg",
+
+ "lookup": [
+    { "column": "timekeepingDescription", "caption" : "Description", "width": 70, "datatype": "S", "align": "", "tip": true },
+    { "column": "timekeepingId", "caption" : "Timekeeping ID", "width": 30, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "timekeepingDescription", "caption": "Description", "width": 40, "datatype": "S" },
+    { "column": "timekeepingId", "caption": "Timekeeping ID", "width": 20, "datatype": "S" }
+
+  ]
+
+}

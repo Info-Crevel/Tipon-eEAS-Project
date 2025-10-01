@@ -1,0 +1,23 @@
+{
+  "lookuptitle": "Day Type List",
+  "querytitle": "Find Day Type",
+  "datasource": "DbsDayType",
+  "key": "dayTypeId",
+  "sort": "dayTypeName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "premiumPercentage",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "dayTypeName", "caption" : "Day Type Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "dayTypeId", "caption" : "ID", "width": 20, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "dayTypeName", "caption": "Day Type Name", "width": 1, "datatype": "S" }
+  ]
+
+}

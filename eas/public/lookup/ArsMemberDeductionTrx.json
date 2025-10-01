@@ -1,0 +1,32 @@
+{
+  "lookuptitle": "Member Deductions",
+  "querytitle": "Find Member Deduction",
+  "datasource": "QArsMemberDeductionTrx",
+  "key": "deductionTrxId",
+  "sort": "memberName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "lg",
+
+ "lookup": [
+    { "column": "memberName", "caption" : "Member Name", "width": 50, "datatype": "S", "align": "", "tip": true },
+    { "column": "memberId", "caption" : "Member #", "width": 10, "datatype": "S", "align": "" },
+    { "column": "memberRequestName", "caption" : "MRF Name", "width": 30, "datatype": "S", "align": "" },
+    { "column": "deductionTrxStatusName", "caption" : "Status", "width": 20, "datatype": "S", "align": "" }
+
+
+
+  ],
+
+  "query": [
+    { "column": "memberName", "caption": "Member Name", "width": 5, "datatype": "S" },
+    { "column": "memberId", "caption": "Member #", "width": 5, "datatype": "S", }
+
+
+  ],
+
+
+}

@@ -1,0 +1,38 @@
+{
+  "lookuptitle": "Pay Group List",
+  "querytitle": "Find Pay Group Contract",
+  "datasource": "QArsClientPayGroup",
+  "key": "clientPayGroupId",
+  "sort": "clientPayGroupName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "OrgId",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "lg",
+
+  "lookup": [
+    { "column": "clientPayGroupName", "caption" : "Pay Group Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "clientContractName", "caption" : "Contract Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "clientName", "caption" : "Client", "width": 80, "datatype": "S", "align": "" },
+    { "column": "clusterName", "caption" : "Cluster", "width": 80, "datatype": "S", "align": "" },
+{ "column": "platformName", "caption" : "Platform", "width": 80, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "clientPayGroupName", "caption": "Pay Group Name", "width": 1, "datatype": "S" },
+    { "column": "clientContractName", "caption": "Contract Name", "width": 1, "datatype": "S" },
+{ "column": "clientName", "caption": "Client", "width": 1, "datatype": "S" },
+{ "column": "clusterName", "caption": "Cluster", "width": 1, "datatype": "S" },
+    { "column": "platformId", "caption": "Platform", "width": 2, "datatype": "I", "comboId": "platformId" }
+  ],
+
+  "combo": [
+ 
+    { "column": "platformId", "datasource": "DbsPlatform", "key": "platformId", "display": "platformName", "sort": "", "filter": "" }
+
+  ]
+
+
+
+}

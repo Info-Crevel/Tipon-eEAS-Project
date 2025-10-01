@@ -1,0 +1,29 @@
+{
+  "lookuptitle": "Expense Account List",
+  "querytitle": "Find Expense Account",
+  "datasource": "QGlsChartCore",
+  "key": "accountId",
+  "sort": "accountId",
+  "filter": "headerFlag = 0 and accountTypeId = 5",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "accountName", "caption" : "Account Name", "width": 78, "datatype": "S", "align": "" },
+    { "column": "accountId", "caption" : "ID", "width": 12, "datatype": "S", "align": "" },
+    { "column": "expenseClassShortName", "caption" : "Class", "width": 10, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "accountName", "caption": "Account Name", "width": 3, "datatype": "S" },
+    { "column": "expenseClassId", "caption": "Class", "width": 1, "datatype": "I", "comboId": "expenseClassId" }
+  ],
+
+  "combo": [
+    { "column": "expenseClassId", "datasource": "DbsExpenseClass", "key": "expenseClassId", "display": "expenseClassShortName", "sort": "", "filter": "" }
+  ]
+
+}

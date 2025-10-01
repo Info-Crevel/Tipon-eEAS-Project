@@ -1,0 +1,25 @@
+{
+  "lookuptitle": "PHH List",
+  "querytitle": "Find PHH",
+  "datasource": "DbsMatrixPhh",
+  "key": "phhId",
+  "sort": "phhName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "phhName", "caption" : "PHH Name", "width": 50, "datatype": "S", "align": "" },
+    { "column": "startDate", "caption" : "Start Date", "width": 20, "datatype": "D", "align": "" },
+    { "column": "phhId", "caption" : "ID", "width": 10, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "phhName", "caption": "PHH Name", "width": 50, "datatype": "S" },
+   { "column": "startDate", "caption": "Start Date", "width": 20, "datatype": "D" }
+  ],
+
+}

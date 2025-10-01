@@ -1,0 +1,34 @@
+{
+  "lookuptitle": "Disbursement Request List",
+  "querytitle": "Find Disbursement Request Entry",
+  "datasource": "QApsRequestTrx",
+  "key": "requestTrxId",
+  "sort": "requestTrxId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "lg",
+
+  "lookup": [
+    { "column": "particulars", "caption" : "Particulars", "width": 30, "datatype": "S", "align": "", "tip": true },
+    { "column": "memberName", "caption" : "Member Name", "width": 14, "datatype": "S", "align": "" },
+    { "column": "amount", "caption" : "Amount", "width": 11, "datatype": "F", "align": "" },
+    { "column": "trxDate", "caption" : "Trx Date", "width": 10, "datatype": "D", "align": "" },
+    { "column": "requestStatusName", "caption" : "Status", "width": 8, "datatype": "S", "align": "" },
+    { "column": "reviewerName", "caption" : "Reviewer Name", "width": 27, "datatype": "S", "align": "", "tip": true },
+    { "column": "approverName", "caption" : "Approver Name", "width": 27, "datatype": "S", "align": "", "tip": true }
+  ],
+
+  "query": [
+    { "column": "particulars", "caption": "Particulars", "width": 5, "datatype": "S" },
+    { "column": "memberName", "caption": "Member Name", "width": 2, "datatype": "S" },
+    { "column": "requestStatusId", "caption": "Status", "width": 2, "datatype": "I", "comboId": "requestStatusId" }
+  ],
+
+  "combo": [
+    { "column": "requestStatusId", "datasource": "ApsRequestStatus", "key": "requestStatusId", "display": "requestStatusName", "sort": "", "filter": "" }
+  ]
+
+}

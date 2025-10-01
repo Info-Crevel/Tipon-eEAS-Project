@@ -1,0 +1,26 @@
+{
+  "lookuptitle": "MRF Members",
+  "querytitle": "Find MRF",
+  "datasource": "QArsMemberRequestHiredList",
+  "key": "memberRequestId",
+  "sort": "memberRequestName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+ "lookup": [
+    { "column": "memberRequestName", "caption" : "Member Request Name", "width": 90, "datatype": "S", "align": "", "tip": true },
+    { "column": "memberRequestId", "caption" : "MRF #", "width": 10, "datatype": "S", "align": "" }
+
+
+  ],
+
+  "query": [
+    { "column": "memberRequestName", "caption": "Member Request Name", "width": 5, "datatype": "S" }
+
+
+  ]
+}

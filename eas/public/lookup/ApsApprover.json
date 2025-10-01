@@ -1,0 +1,26 @@
+{
+  "lookuptitle": "Approver List",
+  "querytitle": "Find Approver",
+  "datasource": "QApsApprover",
+  "key": "approverId",
+  "sort": "approverName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+ "lookup": [
+    { "column": "approverName", "caption" : "Approver Name", "width": 70, "datatype": "S", "align": "", "tip": true },
+    { "column": "approverId", "caption" : "Approver Id", "width": 30, "datatype": "S", "align": "", "tip": true }
+
+  ],
+
+  "query": [
+    { "column": "approverName", "caption": "Approver Name", "width": 50, "datatype": "S" }
+
+
+  ]
+
+}

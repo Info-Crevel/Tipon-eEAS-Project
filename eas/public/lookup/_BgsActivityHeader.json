@@ -1,0 +1,25 @@
+{
+  "lookuptitle": "Header Activity List",
+  "querytitle": "Find Header Activity",
+  "datasource": "QBgsActivityCore",
+  "key": "activityId",
+  "sort": "activityId",
+  "filter": "left(ActivityName, 1) = '#'",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "activityName", "caption" : "Activity Name", "width": 76, "datatype": "S", "align": "" },
+    { "column": "activityId", "caption" : "ID", "width": 10, "datatype": "I", "align": "L" },
+    { "column": "papCode", "caption" : "PAP Code", "width": 14, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "activityName", "caption": "Activity Name", "width": 3, "datatype": "S" },
+    { "column": "activityId", "caption": "ID", "width": 1, "datatype": "S" }
+  ]
+
+}

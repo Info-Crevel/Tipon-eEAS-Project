@@ -1,0 +1,29 @@
+{
+  "lookuptitle": "Obligation Request List",
+  "querytitle": "Find Request",
+  "datasource": "QBgsObx",
+  "key": "obxId",
+  "sort": "obxDate, obxId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "payeeId, payeeBankName, payeeBankAccountNumber",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "payeeName", "caption" : "Payee", "width": 25, "datatype": "S", "align": "", "tip": true },
+    { "column": "documentId", "caption" : "ORS Number", "width": 11, "datatype": "S", "align": "" },
+    { "column": "particulars", "caption" : "Particulars", "width": 22, "datatype": "S", "align": "", "tip": true },
+    { "column": "totalAmount", "caption" : "Amount", "width": 12, "datatype": "F", "align": "" },
+    { "column": "unpaidAmount", "caption" : "Unpaid", "width": 12, "datatype": "F", "align": "" },
+    { "column": "obxId", "caption" : "ID", "width": 7, "datatype": "I", "align": "L" },
+    { "column": "obxDate", "caption" : "Date", "width": 11, "datatype": "D", "align": "" }
+  ],
+
+  "query": [
+    { "column": "payeeName", "caption": "Payee", "width": 2, "datatype": "S" },
+    { "column": "documentId", "caption": "ORS Number", "width": 1, "datatype": "S" }
+  ]
+
+}

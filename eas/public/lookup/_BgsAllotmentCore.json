@@ -1,0 +1,30 @@
+{
+  "lookuptitle": "Allotment List",
+  "querytitle": "Find Allotment",
+  "datasource": "QBgsAllotmentCore",
+  "key": "allotmentId",
+  "sort": "yearId DESC, budgetClassId, allotmentId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "allotmentName", "caption" : "Allotment Name", "width": 55, "datatype": "S", "align": "" },
+    { "column": "allotmentId", "caption" : "ID", "width": 11, "datatype": "I", "align": "" },
+    { "column": "budgetClassName", "caption" : "Budget Class", "width": 24, "datatype": "S", "align": "" },
+    { "column": "yearId", "caption" : "Year", "width": 10, "datatype": "I", "align": "L" }
+  ],
+
+  "query": [
+    { "column": "allotmentName", "caption": "Allotment Name", "width": 7, "datatype": "S" },
+    { "column": "budgetClassId", "caption": "Budget Class", "width": 3, "datatype": "I", "comboId": "budgetClassId" }
+  ],
+
+  "combo": [
+    { "column": "budgetClassId", "datasource": "DbsBudgetClass", "key": "budgetClassId", "display": "budgetClassName", "sort": "", "filter": "" }
+  ]
+
+}

@@ -1,0 +1,33 @@
+{
+  "lookuptitle": "Account List",
+  "querytitle": "Find Account",
+  "datasource": "QFinAccountOrgCore",
+  "key": "accountId",
+  "sort": "accountId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "lg",
+
+  "lookup": [
+    { "column": "accountName", "caption" : "Account Name", "width": 50, "datatype": "S", "align": "" },
+    { "column": "accountId", "caption" : "ID", "width": 10, "datatype": "S", "align": "" },
+    { "column": "accountTypeName", "caption" : "Type", "width": 10, "datatype": "S", "align": "" },
+    { "column": "orgName", "caption" : "Cooperative", "width": 30, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "accountName", "caption": "Account Name", "width": 5, "datatype": "S" },
+    { "column": "accountId", "caption": "ID", "width": 2, "datatype": "S" },
+    { "column": "accountTypeId", "caption": "Type", "width": 2, "datatype": "I", "comboId": "accountTypeId" },
+    { "column": "orgId", "caption": "Cooperative", "width": 5, "datatype": "I", "comboId": "orgId" }
+  ],
+
+  "combo": [
+    { "column": "accountTypeId", "datasource": "FinAccountType", "key": "accountTypeId", "display": "accountTypeName", "sort": "", "filter": "" },
+    { "column": "orgId", "datasource": "SecOrg", "key": "orgId", "display": "orgName", "sort": "", "filter": "" }
+  ]
+
+}

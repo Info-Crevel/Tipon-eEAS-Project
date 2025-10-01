@@ -1,0 +1,26 @@
+{
+  "lookuptitle": "Municipality List",
+  "querytitle": "Find Municipality",
+  "datasource": "QDbsMunicipality",
+  "key": "municipalityId",
+  "sort": "municipalityName",
+  "filter": "",
+  "criteriarequired": true,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "municipalityName", "caption" : "Municipality", "width": 30, "datatype": "S", "align": "" },
+    { "column": "municipalityId", "caption" : "ID", "width": 10, "datatype": "S", "align": "" },
+    { "column": "provinceName", "caption" : "Province", "width": 30, "datatype": "S", "align": "" },
+    { "column": "regionName", "caption" : "Region", "width": 30, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "municipalityName", "caption": "Municipality", "width": 1, "datatype": "S" },
+    { "column": "provinceName", "caption": "Province", "width": 1, "datatype": "S" }
+  ]
+
+}

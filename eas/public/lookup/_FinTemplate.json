@@ -1,0 +1,24 @@
+{
+  "lookuptitle": "Template List",
+  "querytitle": "Find Template",
+  "datasource": "QFinTemplateCore",
+  "key": "templateId",
+  "sort": "templateName, templateId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "templateName", "caption" : "Template Name", "width": 62, "datatype": "S", "align": "" },
+    { "column": "templateId", "caption" : "ID", "width": 15, "datatype": "I", "align": "L" },
+    { "column": "detailCount", "caption" : "Detail Count", "width": 23, "datatype": "I", "align": "" }
+  ],
+
+  "query": [
+    { "column": "templateName", "caption": "Template Name", "width": 7, "datatype": "S" }
+  ]
+
+}

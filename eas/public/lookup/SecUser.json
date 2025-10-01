@@ -1,0 +1,23 @@
+{
+  "lookuptitle": "User List",
+  "querytitle": "Find User",
+  "datasource": "SecUser",
+  "key": "userId",
+  "sort": "userName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "userName", "caption" : "User Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "userId", "caption" : "ID", "width": 20, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "userName", "caption": "User Name", "width": 1, "datatype": "S" }
+  ]
+
+}

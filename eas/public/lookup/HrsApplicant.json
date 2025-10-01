@@ -1,0 +1,39 @@
+{
+  "lookuptitle": "Applicant List",
+  "querytitle": "Find Applicant",
+  "datasource": "QHrsApplicant",
+  "key": "applicantId",
+  "sort": "applicantName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "lg",
+
+ "lookup": [
+    { "column": "applicantLastName", "caption" : "Last Name", "width": 25, "datatype": "S", "align": "", "tip": true },
+    { "column": "applicantFirstName", "caption" : "First Name", "width": 25, "datatype": "S", "align": "", "tip": true },
+    { "column": "applicantMiddleName", "caption" : "Middle Name", "width": 25, "datatype": "S", "align": "", "tip": true },
+    { "column": "applicationSourceName", "caption" : "Application Source", "width": 20, "datatype": "S", "align": "" },
+    { "column": "applicantStatusName", "caption" : "Application Status", "width": 20, "datatype": "S", "align": "" }
+
+  ],
+
+  "query": [
+    { "column": "applicantLastName", "caption": "Last Name", "width": 5, "datatype": "S" },
+    { "column": "applicantFirstName", "caption": "First Name", "width": 5, "datatype": "S" },
+    { "column": "applicantMiddleName", "caption": "Middle Name", "width": 5, "datatype": "S" },
+    { "column": "applicationSourceId", "caption": "Application Source", "width": 5, "datatype": "I", "comboId": "applicationSourceId" },
+    { "column": "applicantStatusId", "caption": "Application Status", "width": 4, "datatype": "I", "comboId": "applicantStatusId" }
+	
+  ],
+
+  "combo": [
+    { "column": "applicationSourceId", "datasource": "DbsApplicationSource", "key": "applicationSourceId", "display": "applicationSourceName", "sort": "", "filter": "" },
+    { "column": "applicantStatusId", "datasource": "HrsApplicantStatus", "key": "applicantStatusId", "display": "applicantStatusName", "sort": "", "filter": "" }
+
+
+  ]
+
+}

@@ -1,0 +1,40 @@
+{
+  "lookuptitle": "Billing List",
+  "querytitle": "Find Billing",
+  "datasource": "QPayTimekeepingBilling",
+  "key": "timekeepingBillingId",
+  "sort": "timekeepingBillingId, clientPayGroupName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "lg",
+
+ "lookup": [
+    { "column": "clientPayGroupName", "caption" : "Pay Group Name", "width": 43, "datatype": "S", "align": "", "tip": true },
+    { "column": "clientPayGroupId", "caption" : "Pay Group #", "width": 12, "datatype": "S", "align": "" },
+    { "column": "timekeepingBillingId", "caption" : "Pay Out #", "width": 10, "datatype": "S", "align": "" },
+    { "column": "billingDate", "caption" : "Billing Date", "width": 11, "datatype": "D", "align": "" },
+    { "column": "cutOffStartDate", "caption" : "Cut Off Start Date", "width": 16, "datatype": "D", "align": "" },
+    { "column": "cutOffEndDate", "caption" : "Cut Off End Date", "width": 15, "datatype": "D", "align": "" },
+    { "column": "timekeepingBillingStatusName", "caption" : "Billing Status", "width": 13, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "clientPayGroupName", "caption": "Pay Group Name", "width": 10, "datatype": "S" },
+   { "column": "billingDate", "caption": "Billing Date", "width": 5, "datatype": "D" },
+
+   { "column": "cutOffStartDate", "caption": "Cut Off Start Date", "width": 5, "datatype": "D" },
+   { "column": "cutOffEndDate", "caption": "Cut Off End Date", "width": 5, "datatype": "D" },
+   { "column": "timekeepingBillingStatusId", "caption": "Billing Status", "width": 4, "datatype": "I", "comboId": "timekeepingBillingStatusId" }
+ 
+  ],
+
+  "combo": [
+      { "column": "timekeepingBillingStatusId", "datasource": "DbsTimekeepingBillingStatus", "key": "timekeepingBillingStatusId", "display": "timekeepingBillingStatusName", "sort": "", "filter": "" }
+
+
+  ]
+
+}

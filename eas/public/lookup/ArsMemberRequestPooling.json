@@ -1,0 +1,43 @@
+{
+  "lookuptitle": "Member Request List",
+  "querytitle": "Find Member Request",
+  "datasource": "QArsMemberRequest",
+  "key": "memberRequestId",
+  "sort": "memberRequestName",
+  "filter": "memberRequestStatusId=1",
+  "criteriarequired": false,
+  "extra": "OrgId",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+ "lookup": [
+    { "column": "memberRequestName", "caption" : "Member Request Name", "width": 30, "datatype": "S", "align": "", "tip": true },
+
+    { "column": "memberRequestId", "caption" : "MRF #", "width": 10, "datatype": "S", "align": "" },
+    { "column": "clientContractName", "caption" : "Client Contract Name", "width": 20, "datatype": "S", "align": "" },    
+
+    { "column": "platformName", "caption" : "Platform", "width": 30, "datatype": "S", "align": "" },
+    { "column": "memberRequestStatusName", "caption" : "MRF Status", "width": 10, "datatype": "S", "align": "" }
+
+  ],
+
+  "query": [
+    { "column": "memberRequestName", "caption": "Member Request Name", "width": 3, "datatype": "S" },
+    { "column": "clientContractName", "caption": "Client Contract Name", "width": 3, "datatype": "S" },
+
+    { "column": "platformId", "caption": "Platform", "width": 3, "datatype": "I", "comboId": "platformId" },
+
+
+  ],
+
+  "combo": [
+
+    { "column": "platformId", "datasource": "DbsPlatform", "key": "platformId", "display": "platformName", "sort": "", "filter": "" },
+
+
+
+
+  ]
+
+}

@@ -1,0 +1,21 @@
+{
+  "lookuptitle": "Member Deminimis",
+  "querytitle": "Find Member Deminimis",
+  "datasource": "QArsMemberDeminimis",
+  "key": "memberDeminimisId",
+  "sort": "memberName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "memberId, memberRequestId",
+  "multipleselect": false,
+  "lookupsize": "sm",
+  "querysize": "sm",
+
+ "lookup": [
+    { "column": "remarks", "caption" : "Remarks", "width": 80, "datatype": "S", "align": "", "tip": true },
+    { "column": "deminimisAmount", "caption" : "Amount", "width": 20, "datatype": "F", "align": "" }
+  
+  ]
+
+
+}

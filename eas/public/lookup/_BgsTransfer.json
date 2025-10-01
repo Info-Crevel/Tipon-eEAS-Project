@@ -1,0 +1,32 @@
+{
+  "lookuptitle": "Transfer List",
+  "querytitle": "Find Transfer",
+  "datasource": "QBgsTransfer",
+  "key": "transferId",
+  "sort": "transferDate DESC, transferId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "transferTypeShortName", "caption" : "Type", "width": 20, "datatype": "S", "align": "" },
+    { "column": "documentId", "caption" : "Document #", "width": 20, "datatype": "S", "align": "" },
+    { "column": "transferId", "caption" : "ID", "width": 20, "datatype": "I", "align": "L" },
+    { "column": "transferDate", "caption" : "Date", "width": 20, "datatype": "D", "align": "" },
+    { "column": "sourceTotalAmount", "caption" : "Amount", "width": 20, "datatype": "F", "align": "" }
+  ],
+
+  "query": [
+    { "column": "documentId", "caption" : "Document #", "width": 1, "datatype": "S", "align": "" },
+    { "column": "transferDate", "caption": "Date", "width": 1, "datatype": "D" },
+    { "column": "transferTypeId", "caption": "Type", "width": 1, "datatype": "I", "comboId": "transferTypeId" }
+  ],
+
+  "combo": [
+    { "column": "transferTypeId", "datasource": "DbsTransferType", "key": "transferTypeId", "display": "transferTypeShortName", "sort": "transferTypeId", "filter": "" }
+  ]
+
+}

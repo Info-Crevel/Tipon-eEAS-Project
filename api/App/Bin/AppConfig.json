@@ -1,0 +1,25 @@
+{
+  "centralOfficeName": "Department of Environment and Natural Resources",
+  "agencyName": "Land Management Bureau",
+  "agencyAddress": "880 Estuar Building, Quezon Avenue, Brgy. Paligsahan, Quezon City",
+  "orgCode": "02-00002",
+  "journalVoucherSignatoryId": 2,
+  "obligationRequestSignatoryId": 1,
+  "allotmentTransferSignatoryId": 8,
+  "agencySignatoryId": 8,
+  "accountingSignatoryId": 2,
+  "cashSignatoryId": 7,
+  "maxLoginAttempts": 3,
+  "suspendLoginMinutes": 1,
+  "autoLogoutMinutes": 0,
+  "fundClusterPrompt": false,
+  "costCenterPrompt": false,
+  "autoDocSequence": true,
+  "balancedGeneralJournal": false,
+  "ipInfoUrl": "https://api.ipify.org?format=json",
+  "uploadMaxFileSize": 204800,
+  "uploadMaxFileSizeText": "200 KB",
+  "recaptcha": {
+    siteKey: "6LcYBzQaAAAAAAvVUlxa3PC2JRlh_32DnYegn6aL"
+  } 
+}

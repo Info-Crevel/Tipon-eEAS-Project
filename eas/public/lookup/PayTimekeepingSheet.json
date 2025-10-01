@@ -1,0 +1,29 @@
+{
+  "lookuptitle": "Timekeeping Sheet List",
+  "querytitle": "Find Timekeeping Sheet",
+  "datasource": "QPayTimekeepingSheet",
+  "key": "timekeepingSheetId",
+  "sort": "timekeepingSheetId, clientPayGroupId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "cutOffStartDate,cutOffEndDate, remarks ",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "rg",
+
+ "lookup": [
+    { "column": "clientPayGroupName", "caption" : "Pay Group Name", "width": 60, "datatype": "S", "align": "", "tip": true },
+    { "column": "clientPayGroupId", "caption" : "Pay Group #", "width": 10, "datatype": "S", "align": "" },
+    { "column": "timekeepingSheetId", "caption" : "Sheet #", "width": 10, "datatype": "S", "align": "" },
+    { "column": "cutOffStartDate", "caption" : "Cut Off Start Date", "width": 10, "datatype": "D", "align": "" },
+    { "column": "cutOffEndDate", "caption" : "Cut Off End Date", "width": 10, "datatype": "D", "align": "" }
+  ],
+
+  "query": [
+    { "column": "clientPayGroupName", "caption": "Pay Group Name", "width": 6, "datatype": "S" },
+   { "column": "cutOffStartDate", "caption": "Cut Off Start Date", "width": 2, "datatype": "D" },
+   { "column": "cutOffEndDate", "caption": "Cut Off End Date", "width": 2, "datatype": "D" }
+ 
+  ]
+
+}

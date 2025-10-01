@@ -1,0 +1,26 @@
+{
+  "lookuptitle": "Active Member List",
+  "querytitle": "Find Member",
+  "datasource": "QArsMemberRequestActiveList",
+  "key": "memberId",
+  "sort": "memberName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "memberName",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+ "lookup": [
+    { "column": "memberName", "caption" : "Member Name", "width": 80, "datatype": "S", "align": "", "tip": true },
+    { "column": "memberId", "caption" : "Member Id", "width": 20, "datatype": "S", "align": "", "tip": true }
+
+  ],
+
+  "query": [
+    { "column": "memberName", "caption": "Member Name", "width": 100, "datatype": "S" }
+
+
+  ]
+
+}

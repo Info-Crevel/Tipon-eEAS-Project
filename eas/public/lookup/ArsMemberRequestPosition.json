@@ -1,0 +1,23 @@
+{
+  "lookuptitle": "Member Request Position List",
+  "querytitle": "Find Member Request Position",
+  "datasource": "ArsMemberRequestPosition",
+  "key": "memberRequestPositionId",
+  "sort": "memberRequestPositionName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "memberRequestPositionDescription",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "memberRequestPositionName", "caption" : "Member Request Position", "width": 80, "datatype": "S", "align": "" },
+    { "column": "memberRequestPositionId", "caption" : "ID", "width": 20, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "memberRequestPositionName", "caption": "Member Request Position", "width": 1, "datatype": "S" }
+  ]
+
+}

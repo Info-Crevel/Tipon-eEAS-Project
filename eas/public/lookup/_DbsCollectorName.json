@@ -1,0 +1,19 @@
+{
+  "lookuptitle": "Collecting Officer List",
+  "querytitle": "Find Collecting Officer",
+  "datasource": "DbsCollector",
+  "key": "collectorName",
+  "sort": "collectorName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "collectorName", "caption" : "Name", "width": 60, "datatype": "S", "align": "", "tip": true },
+    { "column": "collectorPosition", "caption" : "Position", "width": 40, "datatype": "S", "align": "" }
+  ]
+
+}

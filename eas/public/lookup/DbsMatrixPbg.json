@@ -1,0 +1,25 @@
+{
+  "lookuptitle": "PBG List",
+  "querytitle": "Find PBG",
+  "datasource": "DbsMatrixPbg",
+  "key": "pbgId",
+  "sort": "pbgName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "pbgName", "caption" : "PBG Name", "width": 50, "datatype": "S", "align": "" },
+    { "column": "startDate", "caption" : "Start Date", "width": 20, "datatype": "D", "align": "" },
+    { "column": "pbgId", "caption" : "ID", "width": 10, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "pbgName", "caption": "PBG Name", "width": 50, "datatype": "S" },
+   { "column": "startDate", "caption": "Start Date", "width": 20, "datatype": "D" }
+  ],
+
+}

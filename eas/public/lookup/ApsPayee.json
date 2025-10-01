@@ -1,0 +1,34 @@
+{
+  "lookuptitle": "Payee List",
+  "querytitle": "Find Payee",
+  "datasource": "QApsPayee",
+  "key": "payeeId",
+  "sort": "payeeName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+ "lookup": [
+    { "column": "payeeName", "caption" : "Payee Name", "width": 80, "datatype": "S", "align": "", "tip": true },
+    { "column": "payeeTypeName", "caption" : "Type", "width": 20, "datatype": "S", "align": "", "tip": true },
+    { "column": "payeeId", "caption" : "ID", "width": 20, "datatype": "S", "align": "", "tip": true },
+    { "column": "payableTermName", "caption" : "Term", "width": 20, "datatype": "S", "align": "", "tip": true }
+
+  ],
+
+  "query": [
+    { "column": "payeeName", "caption": "Payee Name", "width": 5, "datatype": "S" },
+    { "column": "payeeTypeId", "caption": "Type", "width": 2, "datatype": "I", "comboId": "payeeTypeId" },
+    { "column": "payableTermId", "caption": "Term", "width": 2, "datatype": "I", "comboId": "payableTermId" }
+
+  ],
+
+  "combo": [
+    { "column": "payeeTypeId", "datasource": "ApsPayeeType", "key": "payeeTypeId", "display": "payeeTypeName", "sort": "", "filter": "" },
+    { "column": "payableTermId", "datasource": "ApsPayableTerm", "key": "payableTermId", "display": "payableTermName", "sort": "", "filter": "" }
+  ]
+
+}

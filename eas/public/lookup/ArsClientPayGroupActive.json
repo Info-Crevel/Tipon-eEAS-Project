@@ -1,0 +1,27 @@
+{
+  "lookuptitle": "Pay Group List",
+  "querytitle": "Find Pay Group Contract",
+  "datasource": "QArsClientPayGroup",
+  "key": "clientPayGroupId",
+  "sort": "clientPayGroupName",
+  "filter": "ClientPayGroupStatusId=1",
+  "criteriarequired": false,
+  "extra": "clientName",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "clientPayGroupName", "caption" : "Pay Group Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "clientContractName", "caption" : "Contract Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "clientName", "caption" : "Client Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "clientPayGroupId", "caption" : "ID", "width": 20, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "clientPayGroupName", "caption": "Pay Group Name", "width": 1, "datatype": "S" },
+    { "column": "clientContractName", "caption": "Contract Name", "width": 1, "datatype": "S" },
+    { "column": "clientName", "caption": "Client Name", "width": 1, "datatype": "S" }
+  ]
+
+}

@@ -1,0 +1,23 @@
+{
+  "lookuptitle": "Organization List",
+  "querytitle": "Find Organization",
+  "datasource": "SecOrg",
+  "key": "orgId",
+  "sort": "orgName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "orgName", "caption" : "Organization Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "orgId", "caption" : "ID", "width": 20, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "orgName", "caption": "Organization Name", "width": 1, "datatype": "S" }
+  ]
+
+}

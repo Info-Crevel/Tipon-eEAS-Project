@@ -1,0 +1,30 @@
+{
+  "lookuptitle": "Client Profile List",
+  "querytitle": "Find Client",
+  "datasource": "QArsClient",
+  "key": "clientId",
+  "sort": "clientName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "accountId, accountName",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+ "lookup": [
+    { "column": "clientName", "caption" : "Client Name", "width": 80, "datatype": "S", "align": "", "tip": true },
+    { "column": "creditStatusName", "caption" : "Status", "width": 20, "datatype": "S", "align": "", "tip": true }
+
+  ],
+
+  "query": [
+    { "column": "clientName", "caption": "Client Name", "width": 5, "datatype": "S" },
+    { "column": "creditStatusId", "caption": "Status", "width": 2, "datatype": "I", "comboId": "creditStatusId" },
+
+  ],
+
+  "combo": [
+    { "column": "creditStatusId", "datasource": "ArsCreditStatus", "key": "creditStatusId", "display": "creditStatusName", "sort": "", "filter": "" }
+  ]
+
+}

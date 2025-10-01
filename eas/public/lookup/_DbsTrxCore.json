@@ -1,0 +1,26 @@
+{
+  "lookuptitle": "Item List",
+  "querytitle": "Find Item",
+  "datasource": "DbsTrx",
+  "key": "trxCode",
+  "sort": "trxName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "trxName", "caption" : "Item Name", "width": 40, "datatype": "S", "align": "", "tip": true },
+    { "column": "trxCode", "caption" : "Code", "width": 13, "datatype": "I", "align": "L" },
+    { "column": "amount", "caption" : "Amount", "width": 18, "datatype": "F", "align": "" },
+    { "column": "payOrderFlag", "caption" : "Ord Pymt", "width": 12, "datatype": "B", "align": "" },
+    { "column": "accountId", "caption" : "Account ID", "width": 17, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "trxName", "caption": "Item Name", "width": 1, "datatype": "S" }
+  ]
+
+}

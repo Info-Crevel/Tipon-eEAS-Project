@@ -1,0 +1,51 @@
+{
+  "lookuptitle": "Member Profile List",
+  "querytitle": "Find Member",
+  "datasource": "QHrsMember",
+  "key": "memberId",
+  "sort": "memberLastName, memberFirstName, memberMiddleName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "memberName",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "lg",
+
+ "lookup": [
+    { "column": "memberLastName", "caption" : "Last Name", "width": 25, "datatype": "S", "align": "", "tip": true },
+    { "column": "memberFirstName", "caption" : "First Name", "width": 25, "datatype": "S", "align": "", "tip": true },
+    { "column": "memberMiddleName", "caption" : "Middle Name", "width": 25, "datatype": "S", "align": "", "tip": true },
+    { "column": "birthDate", "caption" : "Birth Date", "width": 15, "datatype": "S", "align": "", "tip": true },
+    { "column": "provinceName", "caption" : "Province", "width": 15, "datatype": "S", "align": "" },
+
+
+  ],
+
+  "query": [
+    { "column": "memberLastName", "caption": "Last Name", "width": 5, "datatype": "S" },
+    { "column": "memberFirstName", "caption": "First Name", "width": 5, "datatype": "S" },
+    { "column": "memberMiddleName", "caption": "Middle Name", "width": 5, "datatype": "S" },
+    { "column": "birthDate", "caption": "Birth Date", "width": 5, "datatype": "S" },
+
+  { "column": "provinceId", "caption": "Province", "width": 5, "datatype": "I", "comboId": "provinceId" },
+
+
+  ],
+
+  "combo": [
+    { "column": "memberTypeId", "datasource": "HrsMemberType", "key": "memberTypeId", "display": "memberTypeName", "sort": "", "filter": "" },
+    { "column": "memberStatusId", "datasource": "HrsMemberStatus", "key": "memberStatusId", "display": "memberStatusName", "sort": "", "filter": "" },
+    { "column": "sexId", "datasource": "DbsSex", "key": "sexId", "display": "sexName", "sort": "", "filter": "" },
+    { "column": "bloodTypeId", "datasource": "DbsBloodType", "key": "bloodTypeId", "display": "bloodTypeName", "sort": "", "filter": "" },
+    { "column": "civilStatusId", "datasource": "DbsCivilStatus", "key": "civilStatusId", "display": "civilStatusName", "sort": "", "filter": "" },
+    { "column": "religionId", "datasource": "DbsReligion", "key": "religionId", "display": "religionName", "sort": "", "filter": "" },
+    { "column": "regionId", "datasource": "DbsRegion", "key": "regionId", "display": "regionName", "sort": "", "filter": "" },
+    { "column": "provinceId", "datasource": "DbsProvince", "key": "provinceId", "display": "provinceName", "sort": "", "filter": "" },
+    { "column": "municipalityId", "datasource": "DbsMunicipality", "key": "municipalityId", "display": "municipalityName", "sort": "", "filter": "" },
+    { "column": "barangayId", "datasource": "DbsBarangay", "key": "barangayId", "display": "barangayName", "sort": "", "filter": "" }
+
+
+
+  ]
+
+}

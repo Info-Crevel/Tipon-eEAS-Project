@@ -1,0 +1,30 @@
+{
+  "lookuptitle": "Appropriation List",
+  "querytitle": "Find Appropriation",
+  "datasource": "QBgsAppropriationCore",
+  "key": "appropriationId",
+  "sort": "yearId DESC, budgetClassId, appropriationId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "appropriationName", "caption" : "Appropriation Name", "width": 55, "datatype": "S", "align": "" },
+    { "column": "appropriationId", "caption" : "ID", "width": 11, "datatype": "I", "align": "" },
+    { "column": "budgetClassName", "caption" : "Budget Class", "width": 24, "datatype": "S", "align": "" },
+    { "column": "yearId", "caption" : "Year", "width": 10, "datatype": "I", "align": "L" }
+  ],
+
+  "query": [
+    { "column": "appropriationName", "caption": "Appropriation Name", "width": 7, "datatype": "S" },
+    { "column": "budgetClassId", "caption": "Budget Class", "width": 3, "datatype": "I", "comboId": "budgetClassId" }
+  ],
+
+  "combo": [
+    { "column": "budgetClassId", "datasource": "DbsBudgetClass", "key": "budgetClassId", "display": "budgetClassName", "sort": "", "filter": "" }
+  ]
+
+}

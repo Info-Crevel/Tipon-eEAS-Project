@@ -1,0 +1,27 @@
+{
+  "lookuptitle": "Activity List",
+  "querytitle": "Find Activity",
+  "datasource": "QBgsActivityCore",
+  "key": "activityId",
+  "sort": "activityId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "activityName", "caption" : "Activity Name", "width": 50, "datatype": "S", "align": "", "tip": true },
+    { "column": "activityId", "caption" : "ID", "width": 8, "datatype": "I", "align": "L" },
+    { "column": "activityShortName", "caption" : "Short Name", "width": 18, "datatype": "S", "align": "", "tip": true },
+    { "column": "excludeFlag", "caption" : "Excluded", "width": 9, "datatype": "B", "align": "" },
+    { "column": "papCode", "caption" : "PAP Code", "width": 15, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "activityName", "caption": "Activity Name", "width": 3, "datatype": "S" },
+    { "column": "activityId", "caption": "ID", "width": 1, "datatype": "I" }
+  ]
+
+}

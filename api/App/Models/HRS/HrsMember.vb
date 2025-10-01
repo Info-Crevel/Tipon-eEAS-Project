@@ -1,0 +1,63 @@
+﻿Public Class HrsMember
+    Public Property MemberId As Integer
+    Public Property MemberEmployeeId As String
+    Public Property MemberLastName As String
+    Public Property MemberFirstName As String
+    Public Property MemberMiddleName As String
+    Public Property MemberSuffixId As Integer
+    Public Property MemberStatusId As Integer
+    Public Property MemberTypeId As Integer
+    Public Property BirthDate As Date
+    Public Property Age As Integer
+    'Public Property BirthPlace As String
+    Public Property BirthRegionId As String
+    Public Property BirthProvinceId As String
+    Public Property BirthMunicipalityId As String
+
+    Public Property SexId As String
+    Public Property BloodTypeId As Integer
+    Public Property Height As String
+    Public Property Weight As String
+    Public Property CivilStatusId As Integer
+    Public Property ReligionId As Integer
+    Public Property Address1 As String
+    Public Property Address2 As String
+    Public Property PostalCode As String
+    Public Property PhoneNumber As String
+    Public Property MobileNumber As String
+    Public Property Email As String
+    Public Property RegionId As String
+    Public Property ProvinceId As String
+    Public Property MunicipalityId As String
+    Public Property BarangayId As String
+    Public Property Facebook As String
+    Public Property Instagram As String
+
+    Public Property AlternateRegionId As String
+    Public Property AlternateProvinceId As String
+    Public Property AlternateMunicipalityId As String
+    Public Property AlternateBarangayId As String
+    Public Property AlternatePostalCode As String
+    Public Property AlternateAddress1 As String
+    Public Property AlternateAddress2 As String
+    Public Property TypeQualificationDetailId As Integer
+    Public Property CDAMemberTypeId As Integer
+    Public Property CDAMemberTypeAmount As Decimal
+    'Public Property EmploymentStatusId As Integer
+    'Public Property EmploymentTypeId As Integer
+    Public Property AbroadFlag As Boolean
+    Public Property RelocateFlag As Boolean
+    Public Property WeekendHolidayFlag As Boolean
+    Public Property ExpectedSalary As Integer
+    Public Property InitialHiredDate As Date
+    Public Property GCashNumber As String
+    Public Property BankId As Integer
+    Public Property BankAccountNumber As String
+    Public Property RecruiterId As Integer
+    'Public Property ApplicationSourceId As Integer
+    Public Property PhotoFileName As String
+    Public Property PhotoGUID As String
+    Public Property ImageExtension As String
+    Public Property LockId As String
+
+End Class

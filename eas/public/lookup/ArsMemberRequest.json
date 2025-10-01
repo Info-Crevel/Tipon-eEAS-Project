@@ -1,0 +1,55 @@
+{
+  "lookuptitle": "MRF Members",
+  "querytitle": "Find MRF",
+  "datasource": "QArsMemberRequest",
+  "key": "memberRequestId",
+  "sort": "memberRequestName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "xl",
+
+ "lookup": [
+    { "column": "memberRequestPositionName", "caption" : "Internal Position", "width": 20, "datatype": "S", "align": "" },
+    { "column": "clientPayGroupName", "caption" : "PayGroup", "width": 30, "datatype": "S", "align": "" },
+    { "column": "clientContractName", "caption" : "Client Contract Name", "width": 30, "datatype": "S", "align": "", "tip": true },
+    { "column": "memberRequestId", "caption" : "MRF #", "width": 10, "datatype": "S", "align": "" },
+    { "column": "memberRequestName", "caption" : "Member Request Name", "width": 30, "datatype": "S", "align": "", "tip": true },
+    { "column": "memberRequestStatusName", "caption" : "MRF Status", "width": 10, "datatype": "S", "align": "", "tip": true },
+    
+   
+  ],
+
+  "query": [
+    
+    { "column": "memberRequestPositionId", "caption": "Internal Position", "width": 5, "datatype": "I", "comboId": "memberRequestPositionId" },
+    { "column": "clientPayGroupId", "caption": "PayGroup", "width": 5, "datatype": "I", "comboId": "clientPayGroupId" },
+    { "column": "clientContractId", "caption": "Client Contract Name", "width": 5, "datatype": "I", "comboId": "clientContractId" },
+    { "column": "memberRequestName", "caption": "Member Request Name", "width": 5, "datatype": "S" },
+    { "column": "memberRequestStatusId", "caption": "MRF Status", "width": 5, "datatype": "I", "comboId": "memberRequestStatusId" },
+    
+    
+
+   
+    
+   
+   
+	
+  ],
+
+  "combo": [
+
+    { "column": "clientPayGroupId", "datasource": "ArsClientPayGroup", "key": "clientPayGroupId", "display": "clientPayGroupName", "sort": "", "filter": "" },
+    { "column": "memberRequestStatusId", "datasource": "ArsMemberRequestStatus", "key": "memberRequestStatusId", "display": "memberRequestStatusName", "sort": "", "filter": "" },
+    {"column": "memberRequestPositionId", "datasource": "ArsMemberRequestPosition", "key": "memberRequestPositionId", "display": "memberRequestPositionName", "sort": "", "filter": "" },
+    {"column": "memberRequestStatusId", "datasource": "ArsMemberRequestStatus", "key": "memberRequestStatusId", "display": "memberRequestStatusName", "sort": "", "filter": "" },
+    {"column": "clientContractId", "datasource": "ArsClientContract", "key": "clientContractId", "display": "clientContractName", "sort": "", "filter": "" }
+
+    
+
+
+  ]
+
+}

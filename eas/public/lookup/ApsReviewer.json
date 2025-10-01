@@ -1,0 +1,26 @@
+{
+  "lookuptitle": "Reviewer List",
+  "querytitle": "Find Reviewer",
+  "datasource": "QApsReviewer",
+  "key": "reviewerId",
+  "sort": "reviewerName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+ "lookup": [
+    { "column": "reviewerName", "caption" : "Reviewer Name", "width": 70, "datatype": "S", "align": "", "tip": true },
+    { "column": "reviewerId", "caption" : "Reviewer Id", "width": 30, "datatype": "S", "align": "", "tip": true }
+
+  ],
+
+  "query": [
+    { "column": "reviewerName", "caption": "Reviewer Name", "width": 50, "datatype": "S" }
+
+
+  ]
+
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <SysLink>
+    <DatabaseId>sys</DatabaseId>
+    <Description>System</Description>
+    <ProviderId>Sql</ProviderId>
+    <ConnectionString>server=LENOVO\MSSQLSERVER19; database=eEAS_From_QA; user id=symphony; password=allow; connect timeout=10</ConnectionString>
+  </SysLink>
+</DocumentElement>

@@ -1,0 +1,27 @@
+{
+  "lookuptitle": "Transaction List",
+  "querytitle": "Find Transaction",
+  "datasource": "QArsClientPayGroupBilling",
+  "key": "clientBillingDetailId",
+  "sort": "sortSeq",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "payTrxName", "caption" : "Trx Name", "width": 45, "datatype": "S", "align": "" },
+    { "column": "billingSheetFormula", "caption" : "Formula", "width": 30, "datatype": "S", "align": "" },
+    { "column": "orgFlag", "caption" : "Coop?", "width": 10, "datatype": "B", "align": "" },
+
+    { "column": "adminFee", "caption" : "Admin Fee %", "width": 15, "datatype": "F", "align": "" }
+
+  ],
+
+  "query": [
+    { "column": "payTrxName", "caption": "Trx Name", "width": 5, "datatype": "S" }
+  ]
+
+}

@@ -1,0 +1,23 @@
+{
+  "lookuptitle": "Region List",
+  "querytitle": "Find Region",
+  "datasource": "DbsRegion",
+  "key": "regionId",
+  "sort": "regionName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "regionName", "caption" : "Region Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "regionId", "caption" : "ID", "width": 20, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "regionName", "caption": "Region Name", "width": 1, "datatype": "S" }
+  ]
+
+}

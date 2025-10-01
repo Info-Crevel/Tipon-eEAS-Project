@@ -1,0 +1,38 @@
+{
+  "lookuptitle": "Skill List",
+  "querytitle": "Skills",
+  "datasource": "QDbsSkillSetDetail",
+  "key": "skillDetailId",
+  "sort": "skillName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "skillDetailName",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "skillName", "caption" : "Skill Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "skillSetName", "caption" : "Skill Set Name", "width": 80, "datatype": "S", "align": "" },
+
+    { "column": "skillDetailId", "caption" : "ID", "width": 20, "datatype": "S", "align": "" },
+    { "column": "skillId", "caption" : "ID", "width": 20, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+   
+    { "column": "skillSetId", "caption": "Skill Set Name", "width": 2, "datatype": "I", "comboId": "skillSetId" },
+{ "column": "skillId", "caption": "Skill Name", "width": 2, "datatype": "I", "comboId": "skillId" }
+
+  ],
+
+ "combo": [
+    { "column": "skillSetId", "datasource": "DbsSkillSet", "key": "skillSetId", "display": "skillSetName", "sort": "", "filter": "" },
+    { "column": "skillId", "datasource": "DbsSkill", "key": "skillId", "display": "skillName", "sort": "", "filter": "" }
+
+
+  ]
+
+
+
+}

@@ -1,0 +1,30 @@
+{
+  "lookuptitle": "Template List",
+  "querytitle": "Find Template",
+  "datasource": "QFinTemplateCore",
+  "key": "templateId",
+  "sort": "templateName, templateId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "templateName", "caption" : "Template Name", "width": 48, "datatype": "S", "align": "" },
+    { "column": "templateId", "caption" : "ID", "width": 12, "datatype": "I", "align": "L" },
+    { "column": "trxTypeName", "caption" : "Type", "width": 25, "datatype": "S", "align": "" },
+    { "column": "detailCount", "caption" : "Detail Count", "width": 15, "datatype": "I", "align": "" }
+  ],
+
+  "query": [
+    { "column": "templateName", "caption": "Template Name", "width": 7, "datatype": "S" },
+    { "column": "trxTypeId", "caption": "Transaction Type", "width": 5, "datatype": "I", "comboId": "trxTypeId" }
+  ],
+
+  "combo": [
+    { "column": "trxTypeId", "datasource": "FinTrxType", "key": "trxTypeId", "display": "trxTypeName", "sort": "", "filter": "" }
+  ]
+
+}

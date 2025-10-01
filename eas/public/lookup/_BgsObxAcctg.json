@@ -1,0 +1,32 @@
+{
+  "lookuptitle": "Obligation Request List",
+  "querytitle": "Find Request",
+  "datasource": "QBgsObxFlat",
+  "key": "obxId",
+  "sort": "obxDate DESC, obxId DESC",
+  "filter": "ApprovedFlag = 1 AND UnpaidAmount > 0",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "lg",
+
+  "lookup": [
+    { "column": "payeeName", "caption" : "Payee", "width": 26, "datatype": "S", "align": "", "tip": true },
+    { "column": "accountName", "caption" : "Account Name", "width": 20, "datatype": "S", "align": "", "tip": true },
+    { "column": "amount", "caption" : "Amount", "width": 11, "datatype": "F", "align": "" },
+    { "column": "obxDate", "caption" : "Date", "width": 9, "datatype": "D", "align": "" },
+    { "column": "obxId", "caption" : "ID", "width": 7, "datatype": "I", "align": "L" },
+    { "column": "obxStatusName", "caption" : "Status", "width": 9, "datatype": "S", "align": "" },
+    { "column": "disburseFlag", "caption" : "Disburse", "width": 7, "datatype": "B", "align": "" },
+    { "column": "documentId", "caption" : "ORS Number", "width": 11, "datatype": "S", "align": "" }
+
+  ],
+
+  "query": [
+    { "column": "payeeName", "caption": "Payee", "width": 2, "datatype": "S" },
+    { "column": "accountName", "caption": "Account Name", "width": 2, "datatype": "S" },
+    { "column": "documentId", "caption": "ORS Number", "width": 1, "datatype": "S" }
+  ]
+
+}

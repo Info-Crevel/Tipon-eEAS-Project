@@ -1,0 +1,25 @@
+{
+  "lookuptitle": "Allotment Activity List",
+  "querytitle": "Find Allotment Activity",
+  "datasource": "QBgsAllotmentActivity",
+  "key": "allotActId",
+  "sort": "",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "psrTotal, rlipTotal, mooeTotal, feTotal, coTotal, psrDetail, rlipDetail, mooeDetail, feDetail, coDetail",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "allotmentName", "caption" : "Allotment Name", "width": 20, "datatype": "S", "align": "" },
+    { "column": "allotActId", "caption" : "Allot / Act ID", "width": 10, "datatype": "I", "align": "L" },
+    { "column": "activityName", "caption" : "Activity", "width": 70, "datatype": "S", "align": "", "tip": true }
+  ],
+
+  "query": [
+    { "column": "allotmentName", "caption": "Allotment Name", "width": 1, "datatype": "S" },
+    { "column": "activityName", "caption": "Activity", "width": 1, "datatype": "S" }
+  ]
+
+}

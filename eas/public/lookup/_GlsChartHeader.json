@@ -1,0 +1,29 @@
+{
+  "lookuptitle": "Header Account List",
+  "querytitle": "Find Header Account",
+  "datasource": "QGlsChartCore",
+  "key": "accountId",
+  "sort": "accountId",
+  "filter": "left(AccountName, 1) = '#'",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "accountName", "caption" : "Account Name", "width": 78, "datatype": "S", "align": "" },
+    { "column": "accountId", "caption" : "ID", "width": 12, "datatype": "S", "align": "" },
+    { "column": "accountTypeName", "caption" : "Type", "width": 10, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "accountName", "caption": "Account Name", "width": 3, "datatype": "S" },
+    { "column": "accountTypeId", "caption": "Type", "width": 1, "datatype": "I", "comboId": "accountTypeId" }
+  ],
+
+  "combo": [
+    { "column": "accountTypeId", "datasource": "GlsAccountType", "key": "accountTypeId", "display": "accountTypeName", "sort": "", "filter": "" }
+  ]
+
+}

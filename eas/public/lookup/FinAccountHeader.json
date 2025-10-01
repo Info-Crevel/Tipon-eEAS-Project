@@ -1,0 +1,29 @@
+{
+  "lookuptitle": "Header Account List",
+  "querytitle": "Find Header Account",
+  "datasource": "QFinAccountCore",
+  "key": "accountId",
+  "sort": "accountId",
+  "filter": "left(AccountName, 1) = '#'",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "accountName", "caption" : "Account Name", "width": 76, "datatype": "S", "align": "" },
+    { "column": "accountId", "caption" : "ID", "width": 10, "datatype": "S", "align": "" },
+    { "column": "accountTypeName", "caption" : "Type", "width": 14, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "accountName", "caption": "Account Name", "width": 5, "datatype": "S" },
+    { "column": "accountTypeId", "caption": "Type", "width": 2, "datatype": "I", "comboId": "accountTypeId" }
+  ],
+
+  "combo": [
+    { "column": "accountTypeId", "datasource": "FinAccountType", "key": "accountTypeId", "display": "accountTypeName", "sort": "", "filter": "" }
+  ]
+
+}

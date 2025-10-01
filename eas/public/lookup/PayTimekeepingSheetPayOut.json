@@ -1,0 +1,27 @@
+{
+  "lookuptitle": "Timekeeping Sheet List",
+  "querytitle": "Find Timekeeping Sheet",
+  "datasource": "QPayTimekeepingSheet",
+  "key": "timekeepingSheetId",
+  "sort": "timekeepingSheetId, clientPayGroupId",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+ "lookup": [
+    { "column": "clientPayGroupName", "caption" : "Pay Group Name", "width": 50, "datatype": "S", "align": "", "tip": true },
+    { "column": "clientPayGroupId", "caption" : "Pay Group #", "width": 10, "datatype": "S", "align": "" },
+{ "column": "cutOffDate", "caption" : "Cut Off Date", "width": 8, "datatype": "D", "align": "" }
+ 
+  ],
+
+  "query": [
+    { "column": "clientPayGroupName", "caption": "Pay Group Name", "width": 5, "datatype": "S" },
+   { "column": "cutOffDate", "caption": "Cut Off Date", "width": 8, "datatype": "D" }
+ 
+  ]
+
+}

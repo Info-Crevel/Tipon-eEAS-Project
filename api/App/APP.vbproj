@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBAC3C44-BEB0-4360-9BBB-80986F8017EB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sys</RootNamespace>
+    <AssemblyName>Sys.App</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44350</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Magick.NET-Q8-AnyCPU, Version=8.0.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
+      <HintPath>packages\Magick.NET-Q8-AnyCPU.8.0.1\lib\net20\Magick.NET-Q8-AnyCPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Magick.NET.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
+      <HintPath>packages\Magick.NET.Core.8.0.1\lib\net20\Magick.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sys.Web">
+      <HintPath>..\_Assembly\Sys.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="ImageMagick" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Newtonsoft.Json" />
+    <Import Include="Newtonsoft.Json.Serialization" />
+    <Import Include="Sys" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.IO" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Net" />
+    <Import Include="System.Net.Http" />
+    <Import Include="System.Web.Http" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\_Shared\AssemblyInfo.vb">
+      <Link>AssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="App\AppLib.vb" />
+    <Compile Include="App\CurrencyWord.vb" />
+    <Compile Include="App\EasSession.vb" />
+    <Compile Include="App\Enumerations.vb" />
+    <Compile Include="App_Start\WebApiConfig.vb" />
+    <Compile Include="Controllers\APS\APS0010_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0020_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0030_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0040_Controller .vb" />
+    <Compile Include="Controllers\APS\APS0100_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0500_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0510_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0520_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0530_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0540_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0550_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0560_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0570_Controller.vb" />
+    <Compile Include="Controllers\APS\APS0600_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0010_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0020_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0050_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0030_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0040_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0060_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0070_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0080_Controller .vb" />
+    <Compile Include="Controllers\ARS\ARS0090_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0100_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0110_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0120_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0150_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0130_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0140_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS0500_Controller.vb" />
+    <Compile Include="Controllers\ARS\ARS5000_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0590_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0910_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0920_Controller.vb" />
+    <Compile Include="Controllers\FIN\FIN0010_Controller.vb" />
+    <Compile Include="Controllers\FIN\FIN0020_Controller.vb" />
+    <Compile Include="Controllers\FIN\FIN0030_Controller.vb" />
+    <Compile Include="Controllers\FIN\FIN0040_Controller.vb" />
+    <Compile Include="Controllers\FIN\FIN0100_Controller.vb" />
+    <Compile Include="Controllers\HRS\HRS0080_Controller.vb" />
+    <Compile Include="Controllers\HRS\HRS0090_Controller.vb" />
+    <Compile Include="Controllers\IXS\IXS_Controller .vb" />
+    <Compile Include="Controllers\PAY\PAY0040_Controller.vb" />
+    <Compile Include="Controllers\PAY\PAY0030_Controller.vb" />
+    <Compile Include="Controllers\PAY\PAY0020_Controller.vb" />
+    <Compile Include="Controllers\PAY\PAY0010_Controller .vb" />
+    <Compile Include="Controllers\HRS\HRS0060_Controller.vb" />
+    <Compile Include="Controllers\HRS\HRS0050_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0450_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0440_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0430_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0420_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0410_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0400_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0390_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0380_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0370_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0360_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0460_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0470_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0480_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0490_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0540_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0550_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0560_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0570_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0580_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0900_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0350_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0340_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0330_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0320_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0310_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0300_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0290_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0280_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0270_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0260_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0250_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0240_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0230_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0220_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0210_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0200_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0190_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0180_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0170_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0160_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0150_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0140_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0010_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0020_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0030_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0120_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0110_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0100_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0090_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0080_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0500_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0040_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0050_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0060_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0070_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0510_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0520_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0530_Controller.vb" />
+    <Compile Include="Controllers\DBS\DBS0130_Controller.vb" />
+    <Compile Include="Controllers\GLS\GLS0100_Controller.vb" />
+    <Compile Include="Controllers\GLS\GLS1000_Controller.vb" />
+    <Compile Include="Controllers\HRS\HRS0010_Controller.vb" />
+    <Compile Include="Controllers\HRS\HRS0030_Controller .vb" />
+    <Compile Include="Controllers\HRS\HRS0040_Controller.vb" />
+    <Compile Include="Controllers\HRS\HRS0070_Controller.vb" />
+    <Compile Include="Controllers\SYS\Sys_Controller.vb" />
+    <Compile Include="Controllers\WEB\WEB_Controller.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\APS\ApsApprover.vb" />
+    <Compile Include="Models\APS\ApsDocType.vb" />
+    <Compile Include="Models\APS\ApsFinTrx.vb" />
+    <Compile Include="Models\APS\ApsOrgTrx.vb" />
+    <Compile Include="Models\APS\ApsPayableAccount.vb" />
+    <Compile Include="Models\APS\ApsPayableTax.vb" />
+    <Compile Include="Models\APS\ApsPayee.vb" />
+    <Compile Include="Models\APS\ApsPayeeType.vb" />
+    <Compile Include="Models\APS\ApsPayOutAccount.vb" />
+    <Compile Include="Models\APS\ApsRequestTrx.vb" />
+    <Compile Include="Models\APS\ApsRequestTrxDetail.vb" />
+    <Compile Include="Models\APS\ApsRequestTrxType.vb" />
+    <Compile Include="Models\APS\ApsRequestType.vb" />
+    <Compile Include="Models\APS\ApsRequestTypeParticulars.vb" />
+    <Compile Include="Models\APS\ApsReviewer.vb" />
+    <Compile Include="Models\APS\ApsTrx.vb" />
+    <Compile Include="Models\ARS\ArsBillingArrangement.vb" />
+    <Compile Include="Models\ARS\ArsChargingArrangement.vb" />
+    <Compile Include="Models\ARS\ArsClientBilling.vb" />
+    <Compile Include="Models\ARS\ArsClientPayGroupPayOut.vb" />
+    <Compile Include="Models\ARS\ArsClientPayOutDeminimis.vb" />
+    <Compile Include="Models\ARS\ArsClientPayOutBasicRate.vb" />
+    <Compile Include="Models\ARS\ArsClientPayOutAllowance.vb" />
+    <Compile Include="Models\ARS\ArsClientBillingAllowance.vb" />
+    <Compile Include="Models\ARS\ArsClientBillingBasicRate.vb" />
+    <Compile Include="Models\ARS\ArsClientBillingDayType.vb" />
+    <Compile Include="Models\ARS\ArsClientBillingDeminimis.vb" />
+    <Compile Include="Models\ARS\ArsClientContactPerson.vb" />
+    <Compile Include="Models\ARS\ArsClientContract.vb" />
+    <Compile Include="Models\ARS\ArsClientContractDocType.vb" />
+    <Compile Include="Models\ARS\ArsClientContractStatus.vb" />
+    <Compile Include="Models\ARS\ArsClientPayGroupBilling.vb" />
+    <Compile Include="Models\ARS\ArsClientPayOutHoliday.vb" />
+    <Compile Include="Models\ARS\ArsClientPayOutDayType.vb" />
+    <Compile Include="Models\ARS\ArsClientDayType.vb" />
+    <Compile Include="Models\ARS\ArsClientOvertime.vb" />
+    <Compile Include="Models\ARS\ArsClientPayGroup.vb" />
+    <Compile Include="Models\ARS\ArsClientPayOut.vb" />
+    <Compile Include="Models\ARS\ArsClientType.vb" />
+    <Compile Include="Models\ARS\ArsClient.vb" />
+    <Compile Include="Models\ARS\ArsContractStatus.vb" />
+    <Compile Include="Models\ARS\ArsCreditStatus.vb" />
+    <Compile Include="Models\ARS\ArsFinTrx.vb" />
+    <Compile Include="Models\ARS\ArsMemberAllowance.vb" />
+    <Compile Include="Models\ARS\ArsMemberAllowanceTrx.vb" />
+    <Compile Include="Models\ARS\ArsMemberDeminimis.vb" />
+    <Compile Include="Models\ARS\ArsMemberDeminimisTrx.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequest.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestApplicantScreening.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestDocType.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestScreening.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestPayOut.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestCDATraining.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestCivilStatus.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestComplianceTraining.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestMedicalResult.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestEducation.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestEmploymentType.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestLicenseProfession.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestNCII.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestBilling.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestPosition.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestReligion.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestSex.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestTypeQualification.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestApplicant.vb" />
+    <Compile Include="Models\ARS\ArsMemberRequestRateDetail.vb" />
+    <Compile Include="Models\ARS\ArsMemberDeductionTrx.vb" />
+    <Compile Include="Models\ARS\ArsTrx.vb" />
+    <Compile Include="Models\DBS\DbsApplicantStatus.vb" />
+    <Compile Include="Models\DBS\DbsCluster.vb" />
+    <Compile Include="Models\DBS\DbsClusterOrgPlatform.vb" />
+    <Compile Include="Models\DBS\DbsScreeningStatus.vb" />
+    <Compile Include="Models\DBS\DbsBillingComputation.vb" />
+    <Compile Include="Models\DBS\DbsCDATraining.vb" />
+    <Compile Include="Models\DBS\DbsEmploymentStatus.vb" />
+    <Compile Include="Models\DBS\DbsDayType.vb" />
+    <Compile Include="Models\DBS\DbsDeminimis.vb" />
+    <Compile Include="Models\DBS\DbsBankLocation.vb" />
+    <Compile Include="Models\DBS\DbsEmploymentType.vb" />
+    <Compile Include="Models\DBS\DbsEngagementType.vb" />
+    <Compile Include="Models\DBS\DbsExpenseCharging.vb" />
+    <Compile Include="Models\DBS\DbsAllowance.vb" />
+    <Compile Include="Models\DBS\DbsHolidayReligion.vb" />
+    <Compile Include="Models\DBS\DbsMatrixPbg.vb" />
+    <Compile Include="Models\DBS\DbsMatrixPhh.vb" />
+    <Compile Include="Models\DBS\DbsMatrixSssDetail.vb" />
+    <Compile Include="Models\DBS\DbsMatrixWhtDetail.vb" />
+    <Compile Include="Models\DBS\DbsMedicalResultType.vb" />
+    <Compile Include="Models\DBS\DbsApplicanScreening.vb" />
+    <Compile Include="Models\DBS\DbsMemberSuffix.vb" />
+    <Compile Include="Models\DBS\DbsNonRevenueQualification.vb" />
+    <Compile Include="Models\DBS\DbsPayGroupComputation.vb" />
+    <Compile Include="Models\DBS\DbsPayTrx.vb" />
+    <Compile Include="Models\DBS\DbsPayVariable.vb" />
+    <Compile Include="Models\DBS\DbsRegionRate.vb" />
+    <Compile Include="Models\DBS\DbsRequestType.vb" />
+    <Compile Include="Models\DBS\DbsRevenueQualification.vb" />
+    <Compile Include="Models\DBS\DbsRnrNumber.vb" />
+    <Compile Include="Models\DBS\DbsVaccineType.vb" />
+    <Compile Include="Models\DBS\DbsRnrRecording.vb" />
+    <Compile Include="Models\DBS\DbsNCIIQualificationTitle.vb" />
+    <Compile Include="Models\DBS\DbsAssessmentCenter.vb" />
+    <Compile Include="Models\DBS\DbsComplianceTraining.vb" />
+    <Compile Include="Models\DBS\DbsInsuranceCoverage.vb" />
+    <Compile Include="Models\DBS\DbsCourse.vb" />
+    <Compile Include="Models\DBS\DbsBank.vb" />
+    <Compile Include="Models\DBS\DbsMemberTransactionType.vb" />
+    <Compile Include="Models\DBS\DbsInventoryCharge.vb" />
+    <Compile Include="Models\DBS\DbsAffiliation.vb" />
+    <Compile Include="Models\DBS\DbsHoliday.vb" />
+    <Compile Include="Models\DBS\DbsHolidayLocation.vb" />
+    <Compile Include="Models\DBS\DbsCDAMemberType.vb" />
+    <Compile Include="Models\DBS\DbsLanguage.vb" />
+    <Compile Include="Models\DBS\DbsWorkSchedule.vb" />
+    <Compile Include="Models\DBS\QDbsSkillSetDetail.vb" />
+    <Compile Include="Models\FIN\FinAtc.vb" />
+    <Compile Include="Models\FIN\FinBank.vb" />
+    <Compile Include="Models\FIN\FinTrx.vb" />
+    <Compile Include="Models\FIN\FinTrxDetail.vb" />
+    <Compile Include="Models\HRS\HrsApplicantMemberDocType.vb" />
+    <Compile Include="Models\HRS\HrsMemberDocTypeApplicant.vb" />
+    <Compile Include="Models\HRS\HrsMemberInitialHiredDate.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingBilling.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingBillingMember.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingLateMatrix.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingPayOut.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingPayOutMember.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingSheetMember.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingSheet.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingScheduleMember.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingSchedule.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingRestDay.vb" />
+    <Compile Include="Models\PAY\PayTimekeeping.vb" />
+    <Compile Include="Models\HRS\HrsApplicantDocType.vb" />
+    <Compile Include="Models\HRS\HrsApplicantMember.vb" />
+    <Compile Include="Models\HRS\HrsMemberApplicant.vb" />
+    <Compile Include="Models\HRS\HrsEmploymentStatusActionMember.vb" />
+    <Compile Include="Models\HRS\HrsEmploymentStatusAction.vb" />
+    <Compile Include="Models\HRS\HrsEmploymentStatusMember.vb" />
+    <Compile Include="Models\HRS\HrsApplicant.vb" />
+    <Compile Include="Models\HRS\HrsApplicantStatus.vb" />
+    <Compile Include="Models\HRS\HrsMemberCDATraining.vb" />
+    <Compile Include="Models\HRS\HrsMemberComplianceTraining.vb" />
+    <Compile Include="Models\HRS\HrsMemberAffiliation.vb" />
+    <Compile Include="Models\HRS\HrsMemberMedicalResultType.vb" />
+    <Compile Include="Models\HRS\HrsRecruiter.vb" />
+    <Compile Include="Models\HRS\HrsMemberVaccine.vb" />
+    <Compile Include="Models\HRS\HrsMemberRnrRecording.vb" />
+    <Compile Include="Models\HRS\HrsMemberLanguage.vb" />
+    <Compile Include="Models\HRS\HrsMemberNCIIQualificationTitle.vb" />
+    <Compile Include="Models\HRS\HrsMemberLicenseProfession.vb" />
+    <Compile Include="Models\HRS\HrsMemberSoloParent.vb" />
+    <Compile Include="Models\HRS\HrsMemberControl.vb" />
+    <Compile Include="Models\DBS\DbsSchool.vb" />
+    <Compile Include="Models\DBS\DbsSavingLoan.vb" />
+    <Compile Include="Models\DBS\DbsTrainingInstitution.vb" />
+    <Compile Include="Models\DBS\DbsStatutoryBenefit.vb" />
+    <Compile Include="Models\DBS\DbsInHouseBenefit.vb" />
+    <Compile Include="Models\DBS\DbsChargingConsideration.vb" />
+    <Compile Include="Models\DBS\DbsContractType.vb" />
+    <Compile Include="Models\DBS\DbsApplicantPosition.vb" />
+    <Compile Include="Models\DBS\DbsLicenseProfession.vb" />
+    <Compile Include="Models\DBS\DbsBarangay.vb" />
+    <Compile Include="Models\DBS\DbsDocType.vb" />
+    <Compile Include="Models\DBS\DbsIndustry.vb" />
+    <Compile Include="Models\DBS\DbsMatrixPbgDetail.vb" />
+    <Compile Include="Models\DBS\DbsMatrixPhhDetail.vb" />
+    <Compile Include="Models\DBS\DbsMatrixSss.vb" />
+    <Compile Include="Models\DBS\DbsMatrixWht.vb" />
+    <Compile Include="Models\DBS\DbsApplicationSource.vb" />
+    <Compile Include="Models\DBS\DbsSkillSet.vb" />
+    <Compile Include="Models\DBS\DbsSkillSetDetail.vb" />
+    <Compile Include="Models\HRS\HrsMemberSkillSet.vb" />
+    <Compile Include="Models\HRS\HrsMemberLicense.vb" />
+    <Compile Include="Models\HRS\HrsMemberTypeQualification.vb" />
+    <Compile Include="Models\DBS\DbsOrgPlatformDetails.vb" />
+    <Compile Include="Models\DBS\DbsEducationLevel.vb" />
+    <Compile Include="Models\DBS\DbsDisability.vb" />
+    <Compile Include="Models\DBS\SecOrg.vb" />
+    <Compile Include="Models\DBS\DbsMunicipality.vb" />
+    <Compile Include="Models\DBS\DbsMunicipalityDetail.vb" />
+    <Compile Include="Models\DBS\DbsPlatform.vb" />
+    <Compile Include="Models\DBS\DbsProvince.vb" />
+    <Compile Include="Models\DBS\DbsProvinceDetail.vb" />
+    <Compile Include="Models\DBS\DbsRegion.vb" />
+    <Compile Include="Models\DBS\DbsRegionDetail.vb" />
+    <Compile Include="Models\DBS\DbsSSSRange.vb" />
+    <Compile Include="Models\DBS\DbsSkill.vb" />
+    <Compile Include="Models\DBS\DbsRelation.vb" />
+    <Compile Include="Models\DBS\DbsBloodType.vb" />
+    <Compile Include="Models\DBS\DbsCivilStatus.vb" />
+    <Compile Include="Models\DBS\DbsSex.vb" />
+    <Compile Include="Models\DBS\DbsReligion.vb" />
+    <Compile Include="Models\HRS\HrsMemberDisability.vb" />
+    <Compile Include="Models\HRS\HrsMemberDocType.vb" />
+    <Compile Include="Models\HRS\HrsMemberCertificate.vb" />
+    <Compile Include="Models\HRS\HrsMemberEligibility.vb" />
+    <Compile Include="Models\HRS\HrsMemberWork.vb" />
+    <Compile Include="Models\HRS\HrsMemberStatus.vb" />
+    <Compile Include="Models\HRS\HrsMemberKin.vb" />
+    <Compile Include="Models\HRS\HrsMemberType.vb" />
+    <Compile Include="Models\FIN\FinAccount.vb" />
+    <Compile Include="Models\FIN\FinTemplate.vb" />
+    <Compile Include="Models\FIN\FinTemplateDetail.vb" />
+    <Compile Include="Models\HRS\HrsMember.vb" />
+    <Compile Include="Models\HRS\HrsMemberEducation.vb" />
+    <Compile Include="Models\PAY\PayTimekeepingSheetMemberSchedule.vb" />
+    <Compile Include="Models\SYS\LogKeyList.vb" />
+    <Compile Include="Models\SYS\SysLogDetail.vb" />
+    <Compile Include="Models\SYS\DeleteQuery.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Symphony.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\BGS\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Symphony.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

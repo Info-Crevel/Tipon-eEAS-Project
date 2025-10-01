@@ -1,0 +1,25 @@
+{
+  "lookuptitle": "Transaction List",
+  "querytitle": "Find Transaction",
+  "datasource": "QArsClientPayGroupPayOut",
+  "key": "clientPayOutDetailId",
+  "sort": "sortSeq",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "payTrxName", "caption" : "Trx Name", "width": 60, "datatype": "S", "align": "" },
+    { "column": "payOutSheetFormula", "caption" : "Formula", "width": 40, "datatype": "S", "align": "" }
+   
+   
+  ],
+
+  "query": [
+    { "column": "payTrxName", "caption": "Trx Name", "width": 100, "datatype": "S" }
+  ]
+
+}

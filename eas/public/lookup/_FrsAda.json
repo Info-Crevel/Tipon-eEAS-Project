@@ -1,0 +1,25 @@
+{
+  "lookuptitle": "ADA Document List",
+  "querytitle": "Find ADA Document",
+  "datasource": "FrsAda",
+  "key": "adaId",
+  "sort": "ReportDate DESC, AdaId DESC",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "documentId", "caption" : "ADA Number", "width": 50, "datatype": "S", "align": "" },
+    { "column": "reportDate", "caption" : "Issue Date", "width": 30, "datatype": "D", "align": "" },
+    { "column": "adaId", "caption" : "ID", "width": 20, "datatype": "I", "align": "L" }
+  ],
+
+  "query": [
+    { "column": "documentId", "caption": "ADA Number", "width": 7, "datatype": "S" },
+    { "column": "reportDate", "caption": "Issue Date", "width": 5, "datatype": "D" }
+  ]
+
+}

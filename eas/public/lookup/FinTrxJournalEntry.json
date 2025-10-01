@@ -1,0 +1,36 @@
+{
+  "lookuptitle": "Journal Entry List",
+  "querytitle": "Find Journal Entry",
+  "datasource": "QFinTrx",
+  "key": "trxId",
+  "sort": "documentId, trxId",
+  "filter": "trxTypeId in (1,2)",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "lg",
+
+  "lookup": [
+    { "column": "particulars", "caption" : "Particulars", "width": 34, "datatype": "S", "align": "", "tip": true },
+    { "column": "reference", "caption" : "Reference", "width": 10, "datatype": "S", "align": "" },
+    { "column": "trxTypeName", "caption" : "Type", "width": 8, "datatype": "S", "align": "" },
+    { "column": "amount", "caption" : "Amount", "width": 11, "datatype": "F", "align": "" },
+    { "column": "trxDate", "caption" : "Trx Date", "width": 10, "datatype": "D", "align": "" },
+    { "column": "trxStatusName", "caption" : "Status", "width": 8, "datatype": "S", "align": "" },
+    { "column": "remarks", "caption" : "Remarks", "width": 27, "datatype": "S", "align": "", "tip": true }
+  ],
+
+  "query": [
+    { "column": "trxTypeId", "caption": "Type", "width": 2, "datatype": "I", "comboId": "trxTypeId" },
+    { "column": "particulars", "caption": "Particulars", "width": 5, "datatype": "S" },
+    { "column": "reference", "caption": "Reference", "width": 2, "datatype": "S" },
+    { "column": "trxStatusId", "caption": "Status", "width": 2, "datatype": "I", "comboId": "trxStatusId" }
+  ],
+
+  "combo": [
+    { "column": "trxTypeId", "datasource": "FinTrxType", "key": "trxTypeId", "display": "trxTypeName", "sort": "", "filter": "trxTypeId in (1,2)" },
+    { "column": "trxStatusId", "datasource": "FinTrxStatus", "key": "trxStatusId", "display": "trxStatusName", "sort": "", "filter": "" }
+  ]
+
+}

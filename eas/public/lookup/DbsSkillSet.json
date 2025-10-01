@@ -1,0 +1,23 @@
+{
+  "lookuptitle": "Skill Set List",
+  "querytitle": "Skill Set",
+  "datasource": "DbsSkillSet",
+  "key": "skillSetId",
+  "sort": "skillSetName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "skillSetName", "caption" : "Skill Set Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "skillSetId", "caption" : "ID", "width": 20, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "skillSetName", "caption": "Skill Set Name", "width": 1, "datatype": "S" }
+  ]
+
+}

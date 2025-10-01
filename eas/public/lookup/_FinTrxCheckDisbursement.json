@@ -1,0 +1,35 @@
+{
+  "lookuptitle": "Journal Entry List",
+  "querytitle": "Find Check Disbursements Journal Entry",
+  "datasource": "QFinTrx",
+  "key": "trxId",
+  "sort": "documentId, trxId",
+  "filter": "journalId = 4",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "lg",
+
+  "lookup": [
+    { "column": "particulars", "caption" : "Particulars", "width": 26, "datatype": "S", "align": "", "tip": true },
+    { "column": "payeeName", "caption" : "Payee Name", "width": 20, "datatype": "S", "align": "", "tip": true },
+    { "column": "documentId", "caption" : "JEV #", "width": 10, "datatype": "S", "align": "" },
+    { "column": "amount", "caption" : "Amount", "width": 11, "datatype": "F", "align": "" },
+    { "column": "trxDate", "caption" : "Trx Date", "width": 9, "datatype": "D", "align": "" },
+    { "column": "trxStatusName", "caption" : "Status", "width": 8, "datatype": "S", "align": "" },
+    { "column": "remarks", "caption" : "Remarks", "width": 16, "datatype": "S", "align": "", "tip": true }
+  ],
+
+  "query": [
+    { "column": "particulars", "caption": "Particulars", "width": 3, "datatype": "S" },
+    { "column": "payeeName", "caption": "Payee Name", "width": 3, "datatype": "S" },
+    { "column": "documentId", "caption": "JEV #", "width": 2, "datatype": "S" },
+    { "column": "trxStatusId", "caption": "Status", "width": 2, "datatype": "I", "comboId": "trxStatusId" }
+  ],
+
+  "combo": [
+    { "column": "trxStatusId", "datasource": "DbsTrxStatus", "key": "trxStatusId", "display": "trxStatusName", "sort": "", "filter": "" }
+  ]
+
+}

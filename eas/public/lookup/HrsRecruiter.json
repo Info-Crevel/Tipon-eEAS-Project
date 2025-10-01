@@ -1,0 +1,23 @@
+{
+  "lookuptitle": "Recruiter List",
+  "querytitle": "Find Recruiter",
+  "datasource": "HrsRecruiter",
+  "key": "recruiterId",
+  "sort": "recruiterName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "recruiterName", "caption" : "Recruiter Name", "width": 46, "datatype": "S", "align": "" },
+    { "column": "recruiterId", "caption" : "ID", "width": 40, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "recruiterName", "caption": "Recruiter Name", "width": 3, "datatype": "S" }
+  ],
+
+}

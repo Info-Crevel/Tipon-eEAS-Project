@@ -1,0 +1,24 @@
+{
+  "lookuptitle": "Cluster List",
+  "querytitle": "Find Cluster",
+  "datasource": "DbsCluster",
+  "key": "clusterId",
+  "sort": "clusterName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "clusterName", "caption" : "Cluster Name", "width": 85, "datatype": "S", "align": "" },
+    { "column": "clusterId", "caption" : "Cluster ID", "width": 15, "datatype": "S", "align": "" }
+
+  ],
+
+  "query": [
+    { "column": "clusterName", "caption": "Cluster Name", "width": 50, "datatype": "S" }
+  ]
+
+}

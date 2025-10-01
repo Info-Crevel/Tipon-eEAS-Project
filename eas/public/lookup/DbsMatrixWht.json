@@ -1,0 +1,25 @@
+{
+  "lookuptitle": "WTH List",
+  "querytitle": "Find WTH",
+  "datasource": "DbsMatrixWht",
+  "key": "whtId",
+  "sort": "whtName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "mg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "whtName", "caption" : "WHT Name", "width": 70, "datatype": "S", "align": "" },
+    { "column": "startDate", "caption" : "Start Date", "width": 20, "datatype": "D", "align": "" },
+    { "column": "whtId", "caption" : "ID", "width": 10, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "whtName", "caption": "WHT Name", "width": 50, "datatype": "S" },
+   { "column": "startDate", "caption": "Start Date", "width": 20, "datatype": "D" }
+  ],
+
+}

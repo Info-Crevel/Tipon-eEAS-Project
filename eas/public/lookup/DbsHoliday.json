@@ -1,0 +1,34 @@
+{
+  "lookuptitle": "Holiday List",
+  "querytitle": "Find Holiday Set",
+  "datasource": "QDbsHoliday",
+  "key": "holidayId",
+  "sort": "HolidayName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "dayTypeId",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "holidayName", "caption" : "Holiday Name", "width": 50, "datatype": "S", "align": "" },
+    { "column": "holidayDate", "caption" : "Date", "width": 10, "datatype": "D", "align": "" },
+    { "column": "dayTypeName", "caption" : "Type Name", "width": 28, "datatype": "S", "align": "" },
+    { "column": "nationalFlag", "caption" : "National", "width": 7, "datatype": "B", "align": "" },
+
+    { "column": "premiumPercentage", "caption" : "Percentage", "width": 11, "datatype": "F", "align": "" }
+
+  ],
+
+  "query": [
+    { "column": "holidayName", "caption": "Holiday Name", "width": 4, "datatype": "S" },
+    { "column": "holidayDate", "caption": "Date", "width": 3, "datatype": "D" },
+   { "column": "dayTypeId", "caption": "Day Type", "width": 3, "datatype": "I", "comboId": "dayTypeId" }
+  ],
+
+ "combo": [
+    { "column": "dayTypeId", "datasource": "DbsDayType", "key": "dayTypeId", "display": "dayTypeName", "sort": "", "filter": "NightDifferentialFlag = 0" }
+  ]
+
+}

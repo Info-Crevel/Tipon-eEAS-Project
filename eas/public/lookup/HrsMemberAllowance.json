@@ -1,0 +1,26 @@
+{
+  "lookuptitle": "Member Profile List",
+  "querytitle": "Find Member",
+  "datasource": "QHrsMember",
+  "key": "memberId",
+  "sort": "memberName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "memberName",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+ "lookup": [
+    { "column": "memberName", "caption" : "Member Name", "width": 70, "datatype": "S", "align": "", "tip": true },
+    { "column": "memberId", "caption" : "Member Id", "width": 30, "datatype": "S", "align": "", "tip": true }
+
+  ],
+
+  "query": [
+    { "column": "memberName", "caption": "Member Name", "width": 50, "datatype": "S" }
+
+
+  ]
+
+}

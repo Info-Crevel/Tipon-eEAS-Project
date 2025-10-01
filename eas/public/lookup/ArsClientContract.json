@@ -1,0 +1,41 @@
+{
+  "lookuptitle": "Client Contract List",
+  "querytitle": "Find Contract",
+  "datasource": "QArsClientContract",
+  "key": "clientContractId",
+  "sort": "clientContractName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "orgId, clusterName",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "xl",
+
+ "lookup": [
+{ "column": "clientName", "caption" : "Client Name", "width": 25, "datatype": "S", "align": "", "tip": true },
+    { "column": "clientContractName", "caption" : "Contract Name", "width": 25, "datatype": "S", "align": "", "tip": true },
+    { "column": "contractTypeName", "caption" : "Contract Type", "width": 34, "datatype": "S", "align": "", "tip": true },
+    { "column": "clientContractStatusName", "caption" : "Contract Status", "width": 34, "datatype": "S", "align": "", "tip": true },
+    { "column": "platformName", "caption" : "Platform Name", "width": 34, "datatype": "S", "align": "", "tip": true },
+    { "column": "clusterName", "caption" : "Cluster Name", "width": 34, "datatype": "S", "align": "", "tip": true }
+  
+
+  ],
+
+  "query": [
+    { "column": "contractTypeName", "caption": "Contract Name", "width": 5, "datatype": "S" },
+    { "column": "contractTypeId", "caption": "Type", "width": 2, "datatype": "I", "comboId": "contractTypeId" },
+    { "column": "clientContractStatusId", "caption": "Status", "width": 2, "datatype": "I", "comboId": "clientContractStatusId" },
+    { "column": "platformId", "caption": "Platform", "width": 2, "datatype": "I", "comboId": "platformId" },
+    { "column": "clusterId", "caption": "Cluster", "width": 2, "datatype": "I", "comboId": "clusterId" }
+
+  ],
+
+  "combo": [
+    { "column": "contractTypeId", "datasource": "DbsContractType", "key": "contractTypeId", "display": "contractTypeName", "sort": "", "filter": "" },
+    { "column": "clientContractStatusId", "datasource": "ArsClientContractStatus", "key": "clientContractStatusId", "display": "clientContractStatusName", "sort": "", "filter": "" },
+    { "column": "platformId", "datasource": "DbsPlatform", "key": "platformId", "display": "platformName", "sort": "", "filter": "" },
+   { "column": "clusterId", "datasource": "DbsCluster", "key": "clusterId", "display": "clusterName", "sort": "", "filter": "" }
+  ]
+
+}

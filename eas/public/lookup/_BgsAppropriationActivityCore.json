@@ -1,0 +1,25 @@
+{
+  "lookuptitle": "Appropriation Activity List",
+  "querytitle": "Find Appropriation Activity",
+  "datasource": "QBgsAppropriationActivity",
+  "key": "approActId",
+  "sort": "",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "psrTotal, rlipTotal, mooeTotal, feTotal, coTotal, psrDetail, rlipDetail, mooeDetail, feDetail, coDetail",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "appropriationName", "caption" : "Appropriation Name", "width": 20, "datatype": "S", "align": "" },
+    { "column": "approActId", "caption" : "Appro / Act ID", "width": 10, "datatype": "I", "align": "L" },
+    { "column": "activityName", "caption" : "Activity", "width": 70, "datatype": "S", "align": "", "tip": true }
+  ],
+
+  "query": [
+    { "column": "appropriationName", "caption": "Appropriation Name", "width": 1, "datatype": "S" },
+    { "column": "activityName", "caption": "Activity", "width": 1, "datatype": "S" }
+  ]
+
+}

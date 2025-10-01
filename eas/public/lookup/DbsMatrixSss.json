@@ -1,0 +1,25 @@
+{
+  "lookuptitle": "SSS List",
+  "querytitle": "Find SSS",
+  "datasource": "DbsMatrixSss",
+  "key": "sssId",
+  "sort": "sssName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "sssName", "caption" : "SSS Name", "width": 50, "datatype": "S", "align": "" },
+    { "column": "startDate", "caption" : "Start Date", "width": 20, "datatype": "D", "align": "" },
+    { "column": "sssId", "caption" : "ID", "width": 10, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "sssName", "caption": "SSS Name", "width": 50, "datatype": "S" },
+   { "column": "startDate", "caption": "Start Date", "width": 20, "datatype": "D" }
+  ],
+
+}

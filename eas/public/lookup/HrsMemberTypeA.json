@@ -1,0 +1,23 @@
+{
+  "lookuptitle": "Member Type List",
+  "querytitle": "Find Member Type
+  "datasource": "HrsMemberType",
+  "key": "memberTypeId",
+  "sort": "memberTypeName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "md",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "memberTypeName", "caption" : "Member Type Name", "width": 80, "datatype": "S", "align": "" },
+    { "column": "memberTypeId", "caption" : "ID", "width": 20, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "memberTypeName", "caption": "Member Type Name", "width": 1, "datatype": "S" }
+  ]
+
+}

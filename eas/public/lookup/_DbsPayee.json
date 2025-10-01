@@ -1,0 +1,27 @@
+{
+  "lookuptitle": "Payee List",
+  "querytitle": "Find Payee",
+  "datasource": "DbsPayee",
+  "key": "payeeId",
+  "sort": "payeeName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "payeeName", "caption" : "Payee Name", "width": 30, "datatype": "S", "align": "", "tip": true },
+    { "column": "payeeOffice", "caption" : "Office", "width": 16, "datatype": "S", "align": "", "tip": true },
+    { "column": "payeeAddress", "caption" : "Address", "width": 10, "datatype": "S", "align": "", "tip": true },
+    { "column": "taxIdNumber", "caption" : "TIN", "width": 14, "datatype": "S", "align": "" },
+    { "column": "payeeBankName", "caption" : "Bank Name", "width": 18, "datatype": "S", "align": "", "tip": true },
+    { "column": "payeeBankAccountNumber", "caption" : "Acct Number", "width": 12, "datatype": "S", "align": "", "tip": true }
+  ],
+
+  "query": [
+    { "column": "payeeName", "caption": "Payee Name", "width": 1, "datatype": "S" }
+  ]
+
+}

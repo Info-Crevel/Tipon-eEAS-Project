@@ -1,0 +1,26 @@
+{
+  "lookuptitle": "Cost Center List",
+  "querytitle": "Find Cost Center",
+  "datasource": "DbsCostCenter",
+  "key": "costCenterId",
+  "sort": "costCenterName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "costCenterName", "caption" : "Name", "width": 40, "datatype": "S", "align": "", "tip": true },
+    { "column": "costCenterShortName", "caption" : "Short Name", "width": 15, "datatype": "S", "align": "" },
+    { "column": "costCenterCode", "caption" : "Code", "width": 15, "datatype": "S", "align": "" },
+    { "column": "costCenterId", "caption" : "ID", "width": 5, "datatype": "I", "align": "R" },
+    { "column": "signatoryName", "caption" : "Signatory", "width": 25, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "costCenterName", "caption": "Name", "width": 1, "datatype": "S" }
+  ]
+
+}

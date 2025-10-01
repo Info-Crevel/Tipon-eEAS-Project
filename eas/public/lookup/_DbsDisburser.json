@@ -1,0 +1,19 @@
+{
+  "lookuptitle": "Disbursing Officer List",
+  "querytitle": "Find Disbursing Officer",
+  "datasource": "DbsDisburser",
+  "key": "disburserId",
+  "sort": "disburserName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "disburserName", "caption" : "Name", "width": 60, "datatype": "S", "align": "", "tip": true },
+    { "column": "disburserPosition", "caption" : "Position", "width": 40, "datatype": "S", "align": "" }
+  ]
+
+}

@@ -1,0 +1,24 @@
+{
+  "lookuptitle": "Signatory List",
+  "querytitle": "Find Signatory",
+  "datasource": "DbsSignatory",
+  "key": "signatoryId",
+  "sort": "signatoryName",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "lg",
+  "querysize": "md",
+
+  "lookup": [
+    { "column": "signatoryName", "caption" : "Signatory Name", "width": 45, "datatype": "S", "align": "", "tip": true },
+    { "column": "signatoryId", "caption" : "ID", "width": 10, "datatype": "S", "align": "L"},
+    { "column": "signatoryPosition", "caption" : "Position", "width": 45, "datatype": "S", "align": "", "tip": true }
+  ],
+
+  "query": [
+    { "column": "signatoryName", "caption": "Signatory Name", "width": 1, "datatype": "S" }
+  ]
+
+}

@@ -1,0 +1,29 @@
+{
+  "lookuptitle": "Order of Payment List",
+  "querytitle": "Find Order of Payment",
+  "datasource": "QFinOpx",
+  "key": "opxId",
+  "sort": "OpxDate DESC, OpxId DESC",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "xl",
+  "querysize": "lg",
+
+  "lookup": [
+    { "column": "payorName", "caption" : "Payor", "width": 29, "datatype": "S", "align": "", "tip": true },
+    { "column": "documentId", "caption" : "Order #", "width": 10, "datatype": "S", "align": "" },
+    { "column": "totalAmount", "caption" : "Amount", "width": 12, "datatype": "F", "align": "" },
+    { "column": "opxDate", "caption" : "Order Date", "width": 10, "datatype": "D", "align": "" },
+    { "column": "particulars", "caption" : "Particulars", "width": 39, "datatype": "S", "align": "", "tip": true }
+  ],
+
+  "query": [
+    { "column": "payorName", "caption": "Payor", "width": 5, "datatype": "S" },
+    { "column": "documentId", "caption": "Order #", "width": 3, "datatype": "S" },
+    { "column": "obxDate", "caption": "Order Date", "width": 3, "datatype": "D" },
+    { "column": "particulars", "caption": "Particulars", "width": 5, "datatype": "S" }
+  ]
+
+}

@@ -1,0 +1,23 @@
+{
+  "lookuptitle": "Status Action List",
+  "querytitle": "Find Status Action",
+  "datasource": "HrsEmploymentStatusAction",
+  "key": "employmentStatusActionId",
+  "sort": "remarks",
+  "filter": "",
+  "criteriarequired": false,
+  "extra": "",
+  "multipleselect": false,
+  "lookupsize": "rg",
+  "querysize": "rg",
+
+  "lookup": [
+    { "column": "remarks", "caption" : "Action Name", "width": 50, "datatype": "S", "align": "" },
+   { "column": "employmentStatusActionId", "caption" : "ID", "width": 10, "datatype": "S", "align": "" }
+  ],
+
+  "query": [
+    { "column": "remarks", "caption": "Action Name", "width": 50, "datatype": "S" }
+  ],
+
+}
