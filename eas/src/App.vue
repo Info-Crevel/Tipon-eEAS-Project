@@ -8,8 +8,7 @@
     <nav id="navbar" class=" collapse-flex show justify-evenly text-white">
       
       <div class="nav-menu  ">
-          <ul class="nav-menu-content">
-            <div class="test">
+           <div class="test">
               <div class="p-1 mb-1 mt-0 ">
             
               <button type="button" :class="logButtonClass" class="  warning border-main px-3 burger" @click="closeMenu"> 
@@ -18,16 +17,33 @@
             </div>
             </div>
             
-            <div class="img">
-              <img :src="dom.getImageSource(sym.userInfo.photo)" alt="..." class="photo d-block mx-auto my-2 fw-28 circle border-main square-100" v-if="sym.userInfo.photo">
-              <img src="../public/img/anonymous.png" width="110rem" height="110rem" v-if="!sym.userInfo.photo" class="photo d-block mx-auto my-2 fw-28 circle border-main square-100 " />
-              <div class="user">
-                <span class="dropitem-text pt-1 text-narrow bold">{{ sym.userInfo.userName }}</span>
+          <ul class="nav-menu-content">
+         
+            <div class="header-content">
+
+            
+              <div class="img">
+                <img :src="dom.getImageSource(sym.userInfo.photo)" alt="..." class="photo d-block mx-auto my-2 fw-28 circle border-main square-100" v-if="sym.userInfo.photo">
+                <img src="../public/img/anonymous.png" width="110rem" height="110rem" v-if="!sym.userInfo.photo" class="photo d-block mx-auto my-2 fw-28 circle border-main square-100 " />
+                <div class="user">
+                  <span class="dropitem-text pt-1 text-narrow bold">{{ sym.userInfo.userName }}</span>
+                  
+                </div>
                 
               </div>
-              
             </div>
-            <div class="search-container">
+            <div class="footer-content">
+              <div class="sidebar-footer " :key="tsUser">
+                <button type="button" class="act-btns curved sm-1" tabindex="-1" @click.prevent="showPasswordRequestDialog">Change Password?</button>
+                
+                <button type="button" class="act-btns curved sm-1" tabindex="-1" @click.prevent="showOrgDialog" v-show="orgs.length !== 1">Change Cooperative?</button>
+                
+                <button type="button" class="act-btns curved sm-1" @click="signout"><i class="fa fa-lg fa-sign-out mr-2"></i>Logout</button>
+              </div>
+            </div>
+            <div class="body-content">
+
+              <div class="search-container">
                 <input v-model="searchName" type="text" placeholder="Search Form Name" class="input-text" list="pageNames"  @change="onNameSelected" />
                 <datalist id="pageNames"><option v-for="item in pages" :key="item.pageId" :value="item.pageName" @input="e => pageName = e.toUpperCase()" class="dropdown"></option></datalist> 
               </div>
@@ -272,7 +288,9 @@
                     <span class="  menu-item  app-sub-content-font">ACCOUNTING AND FINANCE MANAGEMENT</span>
                     <span class="fa fa-play " :class="{ 'rotated': isExpanded5 }"></span >
                   </div>
+               
 
+                  
                   <div class="pl-4 " v-show="isExpanded5">
                     
                     <li><sym-link  v-show="sym.hasPageAccess('pay0040') && canAccessPage('pay0040')" to="pay0040" title="Billing Invoice" @click.native="handleSymLinkClick">Billing Invoice</sym-link></li>
@@ -300,22 +318,22 @@
                     <li><sym-link  v-show="sym.hasPageAccess('ars0500') && canAccessPage('ars0500')" to="ars0500" title="Receivables" @click.native="handleSymLinkClick">Receivables</sym-link></li>
                     <li><sym-link  v-show="sym.hasPageAccess('aps0600') && canAccessPage('aps0600')" to="aps0600" title="Disbursment Request Form" @click.native="handleSymLinkClick">Disbursment Request Form</sym-link></li>
                   </div>
+            
                 </div>  
+                </div>
               </div>
             </div>
-            <div class="sidebar-footer gap" :key="tsUser">
-              <button type="button" class="act-btns curved sm-1" tabindex="-1" @click.prevent="showPasswordRequestDialog">Change Password?</button>
-              
-              <button type="button" class="act-btns curved sm-1" tabindex="-1" @click.prevent="showOrgDialog" v-show="orgs.length !== 1">Change Cooperative?</button>
-              
-              <button type="button" class="act-btns curved sm-1" @click="signout"><i class="fa fa-lg fa-sign-out mr-2"></i>Logout</button>
-            </div>
+
+            
           </ul>
 
+          
+          
+            
 
 
 
-        </div>
+      </div>
 
         <button
           type="button"
@@ -1118,7 +1136,9 @@ button.btn-go-top {
   transition: background-color 0.3s ease;
   text-wrap: wrap;
 }
-
+.main-container{
+  overflow: auto;
+}
 
 .small-screen {
   display: none;
@@ -1147,10 +1167,11 @@ input#toggle {
 
 .main-container-scroller{
   overflow-y: auto;
- 
+  /* border: 1px solid white; */
 }
 .main-container-wrappaer{
-  height: 65vh;
+  height: auto;
+  max-height: 70vh;
 }
 .search-container{
   display: flex;
@@ -1190,14 +1211,17 @@ input#toggle {
 }
 .sidebar-footer{
   display: flex;
-  justify-content: space-between;
+  /* flex-direction: column; */
+  /* justify-content: center;
+  align-content: center; */
+  /* height: 50%; */
  
 }
   .nav-menu.open {
     left: 0; 
   }
 
-  .nav-menu-content {
+.nav-menu-content {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -1206,9 +1230,13 @@ input#toggle {
   font-family: 'Segoe UI', sans-serif;
   transition: all 0.3s ease;
   overflow-y: hidden;
-  height: 100%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
 }
-
+.nav-menu-content .footer-content{
+  justify-content:flex-end;
+}
 .header {
   cursor: pointer;
   display: flex;
@@ -1432,7 +1460,27 @@ input#toggle {
   height: 34px;
 }
 
-
+@media (max-width: 3840px), (max-height: 2160px) {
+  .main-container-wrappaer {
+    max-width: 70vh;
+  }
+}
+@media (max-width: 2560px), (max-height: 1440px) {
+  .main-container-wrappaer {
+    max-height: 100vh;
+  }
+}
+@media (max-width: 1920px), (max-height: 1080px) {
+  .main-container-wrappaer {
+    max-width: 70vh;
+  }
+}
+@media (max-width: 1280px), (max-height: 720px) {
+  .main-container-wrappaer {
+    
+    max-height: 60vh;
+  }
+}
 @media(max-width: 900px){
   .nav-menu ul {
   margin: 0;
@@ -1713,5 +1761,5 @@ input#toggle {
   /* border: 1px solid white; */
 }
 }
-
+ 
 </style>
